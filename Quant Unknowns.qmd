@@ -13,7 +13,63 @@ library(broom)
 ```
 
 ```{r}
-1+1
+library(readr)
+Quant_Unknowns <- read_csv("RStudio_GitHub Merged Data (QUANT) - A+B Unknowns (3).csv", 
+    col_types = cols(date = col_date(format = "%d-%m-%y")))
+View(Quant_Unknowns)
+```
 
+```{r}
+problems(Quant_Unknowns)
+```
+
+```{r}
+library(readr)
+Qual <- read_csv("RStudio_GitHub Merged Data (QUAL) - Qual (2).csv", 
+    col_types = cols(date = col_date(format = "%d-%m-%y")))
+View(Qual)
+```
+
+```{r}
+problems(Qual)
+```
+
+
+```{r}
+#| label: gender
+
+# count
+Quant_Unknowns |> 
+  group_by(gender) |>
+  count()
+
+# bar chart
+Quant_Unknowns |> ggplot(
+  aes(x = gender, fill = gender)
+) +
+  geom_bar() +
+  labs(title = "Genders of Children Accounted For", subtitle = "No Vaccine Cards")
+
+# pie chart
+slices <- c(210, 191, 63)
+labels <- c("Female", "Male", "Unknown")
+percent <- round(slices/sum(slices)*100)
+labels <- paste(labels, percent)
+labels <- paste(labels,"%",sep="") 
+pie(slices, labels = labels, col = rainbow(length(labels)), main = "Pie Chart of Genders Survyed (No Vaccine Cards)")
+
+```
+
+```{r}
+#| label: age
+
+mean_age <- mean(Quant_Unknowns$age)
+print(mean_age)
+
+# average
+#Quant_Unknowns <- Quant_Unknowns |>
+ # mutate(age = factor(age)) |>
+ # mutate(age = as.numeric(age))
+  #mean(age)
 ```
 

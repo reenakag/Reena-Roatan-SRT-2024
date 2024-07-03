@@ -1,0 +1,437 @@
+date,group_no,survey_lang,relation_to_child,island_region,community,colonia,survey_location,household_size,kids_under_eleven,work,respondent_birth_year,years_in_roatan,years_category,last_grade,last_grade_category,walking_dist,auto_dist,vax_location,preg_uno,preg_dos,preg_tres,preg_cuatro,preg_cinco,preg_seis
+21-05-24,A1,Spanish,Mother,1,La Colonia,Yes,Community,4,2,,,10,3,9,2,5,,,Yes,Yes,Unsure,Yes,Yes,Yes
+21-05-24,A2,Spanish,Mother,1,La Colonia,Yes,Community,4,1,,,7,3,6,1,5,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,A3,Spanish,Mother,1,La Colonia,Yes,Community,7,2,,,7,3,9,2,,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,A4,Spanish,Mother,1,La Colonia,Yes,Community,4,1,Yes,,1.5,2,6,1,30,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,A5,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Community,7,3,,,20,4,10,3,20,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,A6,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Community,5,1,,,10,3,6,1,20,,,No,Unsure,Yes,Yes,Yes,Yes
+21-05-24,A7,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Community,4,1,,,7,3,6,1,40,,,Yes,Yes,Unsure,Yes,Yes,Yes
+22-05-24,A8,Spanish,,1,La Colonia,Yes,Community,8,1,Yes,,30,5,4,1,30,,,No,Yes,Yes,Yes,Yes,Yes
+22-05-24,A9,Spanish,,1,La Colonia,Yes,Community,11,1,Yes,,8,3,6,1,30,,,Yes,Yes,Yes,Yes,Yes,Yes
+22-05-24,A10,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,14,4,10,3,10,,,,,,,,
+22-05-24,A11,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,3,2,5,1,30,,,Unsure,Yes,No,Yes,Yes,Yes
+22-05-24,A12,Spanish,,1,La Colonia,Yes,Community,7,3,Yes,,all,6,6,1,10,,,Yes,Yes,No,Yes,Yes,Yes
+22-05-24,A13,Spanish,Grandmother,1,La Colonia,Yes,Community,8,3,Yes,1967,4,2,la mitad de ano?,1,30,10,CE,Yes,Yes,Yes,Yes,Yes,Yes
+22-05-24,A14,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,5,2,10,3,10,,,Yes,Yes,Yes,Yes,Yes,Yes
+22-05-24,A15,Spanish,,1,La Colonia,Yes,Community,7,1,Yes,,<1 ,1,8,2,,,,No,Yes,Unsure,Yes,Yes,Yes
+23-05-24,A16,Spanish,,1,La Colonia,Yes,Community,3,3,Yes,,20,4,4,1,20,5,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A17,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,17,4,3,1,,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A18,Spanish,,1,La Colonia,Yes,Community,2,1,Yes,,6,3,12,3,15,,,Yes,Yes,No,Yes,Yes,Yes
+23-05-24,A19,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,,<1,1,Enfermera,4,26,,,Yes,Yes,No,Yes,Yes,Yes
+23-05-24,A20,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,1,2,6,1,,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A21,Spanish,,1,La Colonia,Yes,Community,2,0,No,,16,4,6,1,10,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A22,Spanish,Grandmother,1,La Colonia,Yes,Community,3,0,Yes,,21,5,12,3,17.5,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A23,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,all,6,,,15,10,,Yes,Yes,No,Yes,Yes,Yes
+23-05-24,A24,Spanish,,1,La Colonia,Yes,Community,6,1,Yes,,11,4,9,2,10,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,A25,Spanish,,1,La Colonia,Yes,Community,3,2,Yes,,<1,1,0,0,,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A26,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,many,7,3,1,60,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A27,Spanish,,1,La Colonia,Yes,Community,10,3,Yes,,all,6,9,2,10,3,,Yes,Unsure,Yes,No,Yes,Yes
+24-05-24,A28,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,,all,6,10,3,5,,,Yes,Yes,Yes,No,Yes,Yes
+24-05-24,A29,Spanish,,1,La Colonia,Yes,Community,7,4,Yes,,>15,4,5,1,,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A30,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,23,5,5,1,20,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A31,Spanish,,1,La Colonia,Yes,Community,5,1,Yes,,many,7,6,1,,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A32,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,30,5,10,3,20,5,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A33,Spanish,,1,La Colonia,Yes,Community,7,3,Yes,,26-27,5,5,1,15,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,A34,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,,all,6,6,1,,,,Yes,Yes,Unsure,Yes,Yes,Yes
+27-05-24,A35,Spanish,,1,La Colonia,Yes,Clinic,4,2,Yes,,7,3,6,1,30,,,No   ,Yes,No    ,No,Yes,Yes
+27-05-24,A36,Spanish,,2,Coxenhole - Malinda,No,Clinic,3,1,Yes,,4,2,9,2,40,,,Yes,Yes,Yes,No,Yes,Yes
+27-05-24,A37,Spanish,,1,Colonia Balfate,Yes,Clinic,5,1,Yes,,24,5,6,1,10,5,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+27-05-24,A38,Spanish,,2,Los Laureles,No,Community,7,2,No,,12,4,0,0,40,,Hosp,No,Yes,No,Yes,Yes,Yes
+28-05-24,A39,Spanish,Father,1,La Colonia,Yes,Community,8,3,Yes,1996,all,6,ultimo carerra,3,15,,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+28-05-24,A40,Spanish,Mother,1,La Colonia,Yes,Community,10,4,Yes,1986,26,5,6,1,,,Hosp,Yes,Yes,No,Yes,Yes,Yes
+28-05-24,A41,Spanish,Father,1,La Colonia,Yes,Community,4,2,Yes,1996,4,2,9,2,20,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-05-24,A42,Spanish,Mother,1,La Colonia,Yes,Community,5,3,Yes,1996,> 20,5,6,1,,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+29-05-24,A43,Spanish,Father,1,Flowers Bay,No,Clinic,4,1,Yes,1986,8,3,12,3,10,,Centro,Yes,Yes,Yes,No,Yes,Yes
+29-05-24,A44,Spanish,,1,Monte Fresco,No,Clinic,5,3,Yes,1999,4,2,6,1,,,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+29-05-24,A45,Spanish,,1,La Colonia - Bella Vista,Yes,Community,4,2,Yes,1997,5,2,8,2,40,,CE,No,Yes,No,Yes,Yes,Yes
+29-05-24,A46,Spanish,,1,La Colonia - Bella Vista,Yes,Community,4,2,Yes,2000,8,3,4,1,20,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,A47,Spanish,Grandmother,1,La Colonia - Policarpo,Yes,Community,3,1,Yes,1976,17,4,5,1,8,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,A48,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,3,1,Yes,1996,many,7,6,1,15,,Hosp,Yes,Unsure,Unsure,Yes,Yes,Yes
+29-05-24,A49,Spanish,Grandmother,1,La Colonia - Policarpo,Yes,Community,7,1,Yes,1952,10,3,7,2,,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,A50,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,3,2,Yes,1991,6,3,baccilerato,3,25,,CE,Yes,Yes,Unsure,No,Yes,Yes
+30-05-24,A51,Spanish,,1,La Colonia - Balfate,Yes,Community,6,3,Yes,1994,15,4,12,3,30,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+30-05-24,A52,Spanish,,1,La Colonia - Balfate,Yes,Community,5,3,Yes,1986,17,4,6,1,15,,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+30-05-24,A54,Spanish,,1,La Colonia - Balfate,Yes,Community,7,3,Yes,1993,14,4,10,3,60,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+30-05-24,A55,Spanish,Mother,1,La Colonia - Balfate,Yes,Community,4,2,Yes,1995,5,2,Technical University,3,,5,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+30-05-24,A56,Spanish,Mother,1,La Colonia - Balfate,Yes,Community,3,1,No,1979,24,5,6,1,20,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+30-05-24,A57,Spanish,Sister,1,La Colonia - Balfate,Yes,Community,6,2,Yes,2006,,,11,3,15,,"Hosp, Brigade",Yes,Yes,Yes,No,Yes,Yes
+30-05-24,A58,Spanish,,1,La Colonia - Balfate,Yes,Community,6,3,Yes,1998,0.5,1,9,2,,,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A59,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1999,all,6,9,2,25,5,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A60,Spanish,,1,La Colonia,Yes,Community,6,2,Yes,1984,0.25,1,6,1,,,Centro,Yes,No,Yes,Yes,Yes,Yes
+31-05-24,A61,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,1997,2,2,technical university,3,30,,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A62,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,2003,all,6,carrera,3,23,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A63,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,1993,9,3,segundo el ministración,4,15,,"CE, Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A64,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,2001,all,6,6,1,18,,Hosp,No,Yes,Unsure,Yes,Yes,Yes
+31-05-24,A65,Spanish,,1,La Colonia,Yes,Community,8,3,Yes,1979,3,2,6,1,20,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A66,Spanish,,1,La Colonia,Yes,Community,7,1,Yes,1980,14,4,4,1,15,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,A67,Spanish,,1,La Colonia,Yes,Community,8,2,Yes,2002,all,6,ultimo de carrera,3,,10,Other,No,Yes,Yes,Yes,Yes,Yes
+03-06-24,A68,English,Cousin,3,Crawfish Rock,No,Community,6,1,Yes,2007,all,6,12,3,,,Other,Yes,Unsure,Yes,No,Yes,Yes
+03-06-24,A69,Spanish,,3,Crawfish Rock,No,Community,6,3,Yes,1990,Unsure,8,6,1,,,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+03-06-24,A70,Spanish,,3,Crawfish Rock,No,Community,6,1,Yes,2003,6,3,4,1,,,"Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+03-06-24,A71,Spanish,Mother,3,Crawfish Rock,No,Community,5,2,Yes,2004,3,2,6,1,,20,Centro,Yes,Unsure,Yes,No,Yes,Unsure
+03-06-24,A72,Spanish,Father,3,Crawfish Rock,No,Community,4,2,yes,1995,10,3,9,2,,5,Centro,Yes,Yes,Yes,No,Yes,Yes
+03-06-24,A73,English,,3,Crawfish Rock,No,Community,4,1,Yes,2003,Unsure,8,4,1,,,Centro,Yes,Yes,Yes,No,Yes,Yes
+03-06-24,A74,Spanish,,3,Crawfish Rock,No,Community,3,1,Yes,2022,0.42,1,no se,,,,Centro,No,Yes,Yes,Yes,Yes,Yes
+03-06-24,A75,Spanish,Grandmother,3,Crawfish Rock,No,Community,4,0,,1982,34,5,6,1,,,"Hosp, Centro",Yes,Yes,No  ,Yes,Yes,Yes
+03-06-24,A76,Spanish,,3,Crawfish Rock,No,Community,5,3,Yes,1997,8,3,8,2,,20,Centro,Yes,Unsure,Unsure,No,Yes,Yes
+03-06-24,A77,Spanish,,3,Crawfish Rock,No,Community,3,1,Yes,2001,many,7,7,2,,60,Centro,No,Unsure,Unsure,No,Yes,Yes
+03-06-24,A78,Spanish,,3,Crawfish Rock,No,Community,3,2,Yes,1992,32,5,second year of college,3,,,"Hosp, Other",Unsure,Unsure,Yes,Yes,Yes,Yes
+03-06-24,A79,Spanish,,3,Crawfish Rock,No,Community,5,3,Yes,2000,1.5,2,7,2,,15,Hosp,No,Yes,Yes,Yes,Yes,Yes
+03-06-24,A80,English,Grandmother,3,Crawfish Rock,No,Community,2,0,Yes,1967,all,6,3,1,,,"Centro, Brigade",Yes,Unsure,Yes,Yes,Yes,Yes
+04-06-24,A81,Spanish,Grandmother,2,Coxen Hole,No,Clinic,7,2,Yes,1966,20,4,6,1,,30,Hosp,Yes,Yes,No,Yes,Yes,Yes
+04-06-24,A82,Spanish,,1,Flowers Bay,No,Clinic,3,1,Yes,2000,0.58,1,ultimo de bachelor,3,,10,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,A83,English,,2,Coxen Hole,No,Clinic,3,1,Yes,2005,all,6,still in school (2 years left),3,,25,CE,Yes,Yes,Yes,No,Yes,Yes
+04-06-24,A84,Spanish,,4,Los Fuertes,No,Clinic,3,1,Yes,2002,all,6,bachelario,3,,10,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+05-06-24,A85,Spanish,,1,La Colonia - Policarpo,Yes,Community,7,3,Yes,1998,0.17,6,6,1,30,,CE,No,Yes,Unsure,No,Yes,Yes
+05-06-24,A86,Spanish,,1,Policarpo,Yes,Community,5,2,Yes,1992,7,3,7,2,,10,Hosp ,Yes,Unsure,Yes,Yes,Yes,Yes
+05-06-24,A87,Spanish,,1,Policarpo,Yes,Community,6,2,Yes,1999,18,4,6,1,10,,Hosp ,Yes,Unsure,Yes,Yes,Yes,Yes
+05-06-24,A88,Spanish,,1,Policarpo,Yes,Community,5,2,Yes,2000,all,6,8,2,30,,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+06-06-24,A89,Spanish,,3,MudHole,No,Community,5,3,Yes,1992,all,6,primero bachelario,3,,20,"CE, Hosp",Yes,Unsure,Yes,No,Yes,Yes
+06-06-24,A90,Spanish,,3,MudHole,No,Community,7,3,Yes,1992,all,6,ultimo de bachelor,3,,20,Hosp,Yes,Yes,Yes,Unsure,Yes,Yes
+06-06-24,A91,Spanish,,3,MudHole,No,Community,6,2,Yes,1986,all,6,6,1,,15,"Hosp, Centro",Yes,Unsure,Yes,Yes,Yes,Yes
+07-06-24,A92,Spanish,,1,Aldin,No,Community,3,1,Yes,2008,2,2,7,2,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,A93,Spanish,,1,Aldin,No,Community,7,4,Yes,1992,2,2,6,1,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,A94,Spanish,,1,Aldin,No,Community,5,1,Yes,1982,13,4,8,2,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,A95,Spanish,,1,Aldin,No,Community,4,1,Yes,1994,all,6,5,1,60,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,A96,Spanish,,1,Aldin,No,Community,6,1,Yes,2005,2,2,6,1,30,,"Hosp, Centro",No,Yes,No,Yes,Yes,Yes
+07-06-24,A97,Spanish,Father,1,Aldin,No,Community,4,2,Yes,2000,all,6,9,2,15,2,CE,Yes,Yes,No,Yes,Yes,Yes
+10-06-24,A98,English,,2,Coxen Hole,No,Community,7,2,No,2004,many,7,graduate,3,,20,Hosp ,Yes,Yes,Unsure,No,Yes,Yes
+10-06-24,A99,English,,2,Coxen Hole,No,Community,3,1,Yes,1990,all,6,accounting and numbers,3,,20,Hosp,Yes,Yes,Yes,No,Yes,Yes
+10-06-24,A100,Spanish,Grandmother,1,La Colonia - Bella Vista,Yes,Community,6,2,Yes,1990,21,5,No - primero,1,,,"Hosp, Other",Yes,Yes,Yes,Yes,Yes,Yes
+10-06-24,A101,Spanish,Grandmother,1,La Colonia - Bella Vista,Yes,Community,3,0,Yes,1964,18,4,0,0,,,"Hosp, Centro",Yes,No,No,Yes,Yes,Yes
+10-06-24,A102,Spanish,,1,La Colonia - Policarpo,Yes,Community,7,1,Yes,1991,12,4,segundo de carrera,3,,,Hosp,Yes,Unsure,Unsure,Yes,Yes,Yes
+11-06-24,A103,English,,2,Cañaveral,No,Community,2,1,Yes,1998,all,6,bacchelario,3,,30,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+11-06-24,A104,Spanish,,2,Cañaveral,No,Community,6,2,Yes,1981,19,4,primero de carrera,3,,25,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+11-06-24,A105,Spanish,,2,Cañaveral,No,Community,5,1,Yes,1990,15,4,ultimo de carrera,3,,30,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+11-06-24,A106,Spanish,,2,Cañaveral,No,Community,6,1,No,1990,18,4,7,2,,10,Hosp,No,Yes,Unsure,Yes,Yes,Yes
+11-06-24,A107,Spanish,Father,2,Cañaveral,No,Community,4,2,Yes,1986,18,4,12,3,,20,Hosp,Yes,Yes,Unsure,Yes,Yes,Yes
+11-06-24,A108,Spanish,Mother,2,Cañaveral,No,Community,7,1,Yes,2001,23,5,4,1,,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+12-06-24,A109,English,Mother,1,Sandy Bay - Corrales,No,Clinic,6,1,Yes,2003,all,6,11,3,20,,CE,No,Yes,No,No,Yes,Yes
+12-06-24,A110,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,No,2004,8,3,graduated,3,,15,CE,No,Yes,Yes,Yes,Yes,Yes
+12-06-24,A111,Spanish,Mother,5,Colonia Esperanza,No,Clinic,4,2,No,2001,21,5,terminar bachelors,3,,45,Centro,Yes,Yes,Yes,No,Yes,Yes
+12-06-24,A112,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Clinic,4,2,No,1991,31,5,3,1,,,Centro,No,Yes,Yes,Yes,Yes,Yes
+13-06-24,A113,Spanish,Grandmother,4,La Colonia- Santa Maria,No,Clinic,4,1,Yes,1969,20,4,12,3,40,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+13-06-24,A114,English,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,1990,all,6,all,3,,15,Hosp,Yes,Unsure,Yes,No,Yes,Yes
+13-06-24,A115,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,1995,3,2,2,1,,20,CE,Yes,Yes,Yes,Yes,Yes,Yes
+13-06-24,A116,Spanish,Grandmother,2,Coxen Hole,No,Clinic,8,3,Yes,1971,20,4,9,2,30,25,CE,No,Unsure,Yes,Yes,Yes,Yes
+13-06-24,A117,Spanish,Mother,1,Sandy Bay,No,Clinic,3,1,Yes,1999,9,3,5,1,13,,CE,No,Unsure,Yes,Yes,Yes,Yes
+13-06-24,A118,Spanish,Mother,1,Sandy Bay,No,Clinic,3,1,Yes,1999,5,2,12,3,5,,"CE, Centro",Yes,Yes,No,Yes,Yes,Yes
+13-06-24,A119,Spanish,Mother,1,Flowers Bay,No,Clinic,5,1,Yes,1993,10,3,9,2,,30,Hosp,Yes,Yes,Yes,Unsure,Yes,Yes
+14-06-24,A120,English,Mother,2,Coxen Hole,No,Clinic,6,2,Yes,2004,all,6,first course,2,,10,,Yes,Unsure,Yes,No,Yes,Yes
+14-06-24,A121,English,Mother,2,Coxen Hole,No,Clinic,6,2,Yes,2005,all,6,primero curso,2,,15,,Yes,Yes,No,Unsure,Yes,Yes
+14-06-24,A122,Spanish,Mother,3,Mudhole,No,Clinic,6,3,Yes,1995,all,6,bachelors,3,,20,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,A123,Spanish,Mother,2,Cow?? (cerca del aeropuerto),No,Clinic,8,1,Yes,2001,4,2,8,2,,,Brigade,Yes,Yes,Yes,No,Yes,No    
+17-06-24,A124,Spanish,Mother,1,Sandy Bay,No,Clinic,4,2,Yes,1987,all,6,finished education,3,,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,A125,English,Mother,3,Hottest Sparrow,No,Clinic,9.5,3,Yes,1986,all,6,2016 - didnt know what grade,4,,,"Hosp, Centro",Yes,Yes,No,No,Yes,Yes
+17-06-24,A126,Spanish,Mother,1,Sandy Bay,No,Clinic,8,2,Yes,2005,2,2,9,2,,,Centro,Yes,Yes,No,No,Yes,Yes
+17-06-24,A127,Spanish,Mother,2,y dos? (cerca del aeropuerto) ,No,Clinic,6,3,Yes,1988,15,4,collegio - finished,3,,,"Hosp, Brigade",No,Yes,Yes,Yes,Yes,Yes
+17-06-24,A128,Spanish,Mother,2,Coxenhole       ,No,Clinic,5,2,Yes,2000,all,6,segundaria,2,,,Centro,Yes,Yes,No,No,Yes,Yes
+17-06-24,A129,Spanish,Mother,1,La Colonia,Yes,Clinic,5,3,Yes,1994,20,4,9,2,,,"CE, Centro",Yes,Yes,No,Yes,Yes,Yes
+17-06-24,A130,Spanish,Mother,1,Sandy Bay - Bella Vista (La Colonia) ,Yes,Clinic,4,1,Yes,1996,15,4,tercero,1,,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+17-06-24,A131,Spanish,Grandmother,1,Policarpo,Yes,Clinic,4,1,Yes,1968,2,2,5,1,,,Hosp,Yes,Unsure,No,Yes,Yes,Yes
+17-06-24,A132,Spanish,Mother,1,Colonia Aldin West End,No,Clinic,4,1,Yes,1994,17,4,5,1,,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,A133,Spanish,Father,1,Sandy Bay,No,Clinic,5,1,Yes,1994,0.5,1,todo el ano - segunadrio,2,,,Other,Yes,Yes,Yes,No,Yes,Yes
+17-06-24,A134,English,Mother,1,Sandy Bay,No,Clinic,6,1,Yes,1977,all,6,9,2,,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,A135,Spanish,Mother,4,Los Fuertes,No,Clinic,4,1,Yes,1995,10,3,segundaria de carrera,3,,,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,A136,Spanish,Mother,2,Coxen Hole,No,Clinic,4,2,Yes,1986,15,4,universidad,4,,,CE,Yes,No,Yes,Yes,Yes,Yes
+18-06-24,A137,Spanish,Mother,4,Los Fuertes ,No,Clinic,4,1,Yes,1990,18,4,7,2,,,"CE, Hosp",No,Yes,Yes,Yes,Yes,Yes
+18-06-24,A138,Spanish,Mother,1,La Colonia - Balfate,Yes,Clinic,7,2,Yes ,2000,3,2,12,3,,,CE,No,Unsure,Yes,No,Yes,Yes
+18-06-24,A139,Spanish ,Mother,3,Mudhole 2,No,Community,5,3,Yes,1998,all,6,bachelorato,3,,,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,A140,Spanish,Grandmother,3,Mudhole 2,No,Community,4,2,Yes,1979,all,6,universitaria - completo,4,,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,A141,Spanish,Mother,3,Mudhole 2,No,Community,5,3,Yes,1998,1,2,8,2,,,Other,No,Yes,Yes,No,Yes,Yes
+18-06-24,A142,Spanish,Mother,3,Mudhole 2,No,Community,4,2,Yes,1992,30,5,primera carrera,3,,,"CE, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,A143,Spanish,Mother,3,Mudhole 2,No,Community,4,2,Yes,1994,all,6,segunda de carrera,3,,,Hosp,Yes,Unsure,Unsure,Yes,Yes,No
+18-06-24,A144,Spanish,Grandmother,2,Canaveral,No,Clinic,5,3,Yes,1979,17,4,segundo ,3,90,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+18-06-24,A145,Spanish,Grandmother ,2,Coxenhole,No,Clinic ,5,2,Yes,1979,1,2,3,1,,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,A146,Spanish,Aunt,1,Sandy Bay - UVA?,Yes,Clinic,6,3,Yes,2007,0.25,1,6,2,15,,Other,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,A147,Spanish,Grandmother,5,Punta Gorda,No,Clinic ,5,2,No,1983,all,6,universidad (finished),4,,60,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,A148,Spanish,Grandmother ,1,La Colonia - Policarpo ,Yes,Clinic,6,2,Yes,1978,33,5,6,1,,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,A149,Spanish,Father,2,Coxenhole,No,Clinic ,4,2,Yes,1999,3,2,9,2,,15,Hosp,Yes,Unsure,Yes,No,Yes,Yes
+19-06-24,A150,Spanish,Mother,2,Palos Alto - Coxenhole,No,Clinic,3,1,Yes,1992,all,6,carrera,3,,25,Hosp,No,Unsure,Yes,Yes,Yes,Yes
+19-06-24,A151,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,4,2,Yes,1999,1,2,6,1,,,CE,No,Yes,Yes,Yes,Yes,Yes
+19-06-24,A152,Spanish,Father,1,La Colonia - Policarpo,Yes,Community,4,2,Yes,1992,21,5,4,1,,,"CE, Brigade",Yes,Yes,Unsure,No,Yes,Yes
+19-06-24,A153,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,4,2,Yes,1986,8,3,4,1,15,,Hosp ,Yes,Unsure,Yes,Unsure,Yes,Yes
+19-06-24,A154,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,5,3,Yes,1996,7,3,4,1,,,Hosp,Yes,Unsure,Unsure,Unsure,Yes,Unsure
+19-06-24,A155,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,4,2,Yes,2000,all,6,segundo de carrera,2,,3,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,A156,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,5,2,Yes,1981,20,4,6,1,15,,Hosp,Yes,Yes,Unsure,Yes,Yes,Yes
+19-06-24,A157,Spanish,Mother,1,La Colonia - Policarpo,Yes,Community,3,1,Yes,2006,2,2,segundo siglo,2,30,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+19-06-24,A158,Spanish,Mother ,2,Brasil??,No,Clinic,10,4,Yes,1977,all,6,segundo,2,,40,CE,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,A159,Spanish,Mother,2,Spanish Town,No,Clinic,5,3,Yes,1999,all,6,tercero,2,,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,A160,Spanish,Mother,2,Franco Flats ,No,Clinic,5,2,Yes,2000,all,6,termine primera segundaria ,3,20,,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+20-06-24,A161,Spanish,Mother,1,Sandy Bay - Tushee,No,Clinic,3,1,Yes,1990,4,2,toda de segundaria,3,5,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,A162,Spanish,Mother,1,West End,No,Clinic,3,2,Yes,2000,8,3,ultimo de ano de escuela segundaria,2,,5,CE,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,A163,Spanish,Mother,1,Colonia Aldin West End,No,Clinic,4,2,Yes,1998,20,4,6,1,,30,"CE, Hosp, Brigade",Yes,Yes,Yes,Unsure,Yes,Yes
+20-06-24,A164,Spanish,Mother,2,Nicaragua- Coxen Hole,No,Clinic,5,3,Yes,1995,2,2,5,1,,18,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,A165,English,Mother,1,Sandy Bay,No,Community,5,3,Yes,1997,14,4,8,2,,3,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+20-06-24,A166,Spanish,Mother,1,Sandy Bay,No,Community,5,2,Yes,1987,6,3,plan basico -- whole thing,3,,25,"CE, Hosp",No,Yes,Yes,Yes,Yes,Yes
+20-06-24,A167,English,Mother,1,Sandy Bay,No,Community,5,3,Yes,1993,all,6,9,2,,5,"CE, Hosp, Brigade",Yes,Yes,Unsure,No,Yes,Yes
+21-06-24,A168,Spanish ,Mother,2,Swampo,No,Clinic,4,2,Yes,2000,2,2,7,2,,,Other,Yes,Yes,Yes,Yes,Yes,Yes
+21-06-24,A169,Spanish,Mother,3,Mudhole,No,Clinic,8,2,Yes,2002,10,3,bachillerato,3,,10,CE,Yes,Yes,Yes,Yes,Yes,Yes
+21-06-24,A170,Spanish,Mother,3,Hottest Sparrow,No,Clinic,5,2,Yes,1992,all,6,enfermera ,4,,40,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+24-06-24,A171,Spanish,Aunt,2,Los Laureles,No,Community,7,2,Yes,2009,all,6,1,1,,,Hosp,Yes,Yes,No,Yes,Yes,Yes
+24-06-24,A172,Spanish,Mother,2,Los Laureles,No,Community,8,2,Yes,1992,11,4,secundaria,2,,30,"CE, Hosp",Yes,Yes,No,Yes,Yes,Yes
+25-06-24,A173,English,Mother,5,Milton Bight,No,Clinic,3,1,Yes,1991,all,6,6,1,,75,Centro,Yes,Yes,Unsure,Yes,Yes,Yes
+25-06-24,A174,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Clinic,5,1,Yes,1985,22,5,6,1,30,8,"CE, Hosp",Yes,Yes,Unsure,Yes,Yes,Yes
+25-06-24,A175,Spanish,Mother,5,Juticalpa,No,Clinic,5,3,Yes,1998,all,6,bachillerato financieria,3,,60,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+25-06-24,A176,Spanish,Mother,2,El swampo,No,Clinic,3,1,Yes,1994,2,2,bachillerato,3,,30,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+25-06-24,A177,Spanish,Mother,1,Flowers Bay,No,Community,4,2,Yes,1983,19,4,6,1,,20,Hosp,Yes,Unsure,No,Yes,Yes,Yes
+25-06-24,A178,English,Mother,1,Flowers Bay,No,Community,4,2,Yes,1997,2,2,bachelors (finished),3,,23,"Hosp, Centro",Yes,Unsure,Yes,No,Yes,Yes
+25-06-24,A179,Spanish,Mother,1,Flowers Bay,No,Community,3,1,Yes,1992,born here,6,12,3,,,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+25-06-24,A180,Spanish,Mother,1,Flowers Bay,No,Community,4,2,No,1998,5,2,6,1,,,Other,Yes,Unsure,Yes,No,Yes,Yes
+25-06-24,A181,Spanish,Mother,2,Coxen Hole,No,Clinic,4,2,Yes,1987,1.5,2,6,1,,35,Other,Yes,Unsure,Yes,Yes,Yes,Yes
+25-06-24,A182,Spanish,Mother,1,Policarpo Calindo- La Colonia,Yes,Clinic,5,2,Yes,1995,born here,6,ultimo de carrera,3,,20,CE,No,Yes,No,No,Yes,Yes
+26-06-24,A183,Spanish,Mother,2,Punta Carriba,No,Clinic,6,2,Yes,1985,since 2003,5,secundaria completa,2,,15,Centro,No,Yes,Yes,Yes,Yes,Yes
+26-06-24,A184,Spanish,Mother,4,Los fuertes,No,Clinic,3,1,Yes,2002,all,6,9,2,,25,"CE, Centro",Yes,Yes,No,No,Yes,Yes
+26-06-24,A185,Spanish,Mother,1,Las Gimelas,No,Clinic,3,1,Yes,1988,4,2,universidad - technical school,4,,10,CE,Yes ,Yes,Yes,Yes,Yes,Yes
+25-06-24,A186,Spanish,Mother,1,La Colonia,Yes,Community,3,2,Yes,1997,11,4,segundo grado,1,,,CE,No,Yes,No,Yes,Yes,Yes
+25-06-24,A187,Spanish,Mother,1,La Colonia,Yes,Community,3,1,Yes,1991,15,4,8,2,,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+26-06-24,A188,Spanish,Mother,1,La Colonia,Yes,Community,6,1,Yes,2006,born here,6,ultimo ano de tercero (in it rn),3,,25,Hosp,Yes,Unsure,No,Unsure,Yes,Yes
+26-06-24,A189,Spanish,Brother,1,La Colonia,Yes,Community,6,3,Yes,2008,born here,6,9,2,17,,"CE, Hosp, Brigade",Yes,Yes,Yes,No,Yes,Yes
+26-06-24,A190,Spanish,Mother,1,La Colonia,Yes,Community,8,2,Yes,2005,2,2,8,2,60,15,"CE, Centro",Yes,Yes,Yes,No,Yes,Yes
+26-06-24,A191,Spanish,Sister,1,La Colonia,Yes,Community,3,1,Yes,2011,11,4,8,2,,,"Hosp, Centro",Yes,Unsure,Yes,Yes,Yes,Yes
+26-06-24,A192,Spanish,Grandmother ,1,La Colonia,Yes,Community,3,0,No,1971,25,5,6,1,10,,"CE, Brigade",No,Yes,Yes,Yes,Yes,Yes
+27-06-24,A193,Spanish,Mother,2,CoxenHole,No,Clinic,3,1,Yes,2002,8,3,ultimo de bachilerato ,3,,30,Hosp,Yes,Yes,No,No,Yes,Yes
+27-06-24,A194,Spanish,Mother,1,La plaita - Sandy Bay ,No,Clinic,3,1,Yes,1990,4,2,ultimo de bachelar,3,5,,"CE, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+27-06-24,A195,Spanish,Mother,4,Los Fuertes,No,Clinic,3,1,Yes,2003,1,2,bachelor de administration,3,,30,CE,Yes,Yes,Yes,Unsure,Yes,Yes
+27-06-24,A196,English,Mother,2,Coxenhole,No,Clinic,5,3,Yes,1992,born here,6,3,3,,30,Hosp,Yes,Unsure,Unsure,Yes,Yes,Yes
+27-06-24,A197,Spanish,Mother,4,Los Fuertes,No,Clinic,3,1,Yes,2001,many years,7,bachelorato,3,,30,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+27-06-24,A198,Spanish,Mother,4,Los Fueretes,No,Clinic,3,1,Yes,2003,Unsure,8,segundaria de collegio,3,,30,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+27-06-24,A199,Spanish,Mother,4,Los Fuertes,No,Clinic,3,1,Yes,1999,27,5,ultimo ano de carrera ,3,,35,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+27-06-24,A200,Spanish,Mother,3,MudHole,No,Clinic,4,2,Yes,2000,13,4,bachilerato,3,,60,CE,Yes,Yes,No,Yes,Yes,Yes
+27-06-24,A201,Spanish,Mother,1,Policarpo - La Colonia,Yes,Clinic,3,1,Yes,2003,many years,7,,,,10,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+27-06-24,A202,Spanish,Mother,2,Coconut Garden,No,Clinic,5,1,Yes,1990,18,4,secundaria,2,,30,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A203,Spanish,Mother,4,Los Fueretes,No,Clinic,3,1,Yes,2001,all,6,universidad,4,,20,"Centro, Hosp",Yes,Unsure,Yes,Yes,Yes,Yes
+28-06-24,A204,Spanish,Mother,2,Coxenhole,No,Clinic,3,1,Yes,1995,8,3,segundaria completa,2,,20,"CE, Other",Yes,Yes,Yes,No,Yes,Yes
+28-06-24,A205,Spanish,Mother,2,Swampo,No,Clinic,6,2,Yes,1987,all,6,5,1,,20,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A206,Spanish,Mother,1,Sandy Bay,No,Clinic,8,4,Yes,2000,greater than 7,3,ultimo de carerra,3,,10,Centro,Yes,Yes,Unsure,Unsure,Yes,Yes
+28-06-24,A207,Spanish,Mother,2,Redhill (residence),No,Clinic,3,1,Yes,1990,15,4,bachelarito,3,,25,"CE, Hosp",Yes,Yes,Unsure,Yes,Yes,Yes
+28-06-24,A208,Spanish,Mother,1,La Colonia - Policarpo,Yes,Clinic,5,1,Yes,1994,10,3,segundaria curso,2,,10,Centro,Yes,Yes,Yes,No,Yes,Yes
+28-06-24,A209,Spanish,Sister,2,Canaveral (close to),No,Clinic,6,2,Yes,2005,6,3,colegio,3,,27.5,Hosp,Yes,Yes,Unsure,No,Yes,Yes
+28-06-24,A210,Spanish,Mother,2,Canaveral,No,Clinic,8,3,Yes,1996,18,4,segundaria completo,2,,12.5,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A211,Spanish,Mother,1,La Uva - Sandy Bay,Yes,Clinic,3,1,No,2002,5,2,primero de carrera,3,,10,Other,No,Unsure,Yes,No,Yes,Yes
+28-06-24,A212,Spanish,Father,1,Aldin West End,No,Clinic,3,1,Yes,1993,1,2,6,1,,25,CE,Yes,Unsure,No,Yes,Yes,Yes
+28-06-24,A213,English,Mother,3,Corozal,No,Clinic,2,1,Yes,1997,all,6,high school - graduate in 2 years,3,,30,"CE, Hosp",Yes,Yes,No,Yes,Yes,Yes
+28-06-24,A214,Spanish,Father,2,Franco Flats ,No,Clinic,4,2,Yes,2000,15,4,baccheliarato,3,,20,CE,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A215,English,Cousin,1,Berrinche,No,Community,6,1,Yes,2003,all,6,11,3,,10,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A216,English,Mother,1,Berrinche,No,Community,4,3,Yes,1995,all,6,diploma -- graduated HS,3,,15,Hosp,Yes,Yes,No,No,Yes,Yes
+28-06-24,A217,Spanish,Father,1,Berrinche,No,Community,4,1,Yes,1982,20,4,5,1,,5,CE,Yes,Yes,Yes,No,Yes,Yes
+28-06-24,A218,Spanish,Mother,1,Berrinche,No,Community,4,2,Yes,1992,all,6,6,1,,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,A219,Spanish,Mother,1,Berrinche,No,Community,3,1,Yes,1992,20,4,estuvo semestre de univesidad (pero primera de carrera?) ,4,,10,CE,Yes,Yes,No,No,Yes,Yes
+28-06-24,A220,Spanish,Mother,1,Berrinche,No,Community,6,3,Yes,1992,2,2,9,2,,,Other,Yes,Unsure,Yes,Yes,Yes,Yes
+01-07-24,A222,Spanish,Mother,1,Sandy Bay Policarpo,Yes,Clinic,4,2,Yes,2002,Unsure,8,5,1,,15,CE,Yes,Yes,No,Unsure,Yes,Yes
+01-07-24,A223,Spanish,Mother,1,Aldin West End,No,Clinic,3,1,Yes,1999,3,2,universidad 1st year,4,,30,Other,Yes,Unsure,Yes,Yes,Yes,Yes
+01-07-24,A224,Spanish,Mother,1,West End,No,Clinic,4,1,Yes,1997,20,4,6,1,,30,Other,Yes,Unsure,No,No,Yes,Yes
+01-07-24,A225,Spanish,Mother,2,Spring Garden 2,No,Clinic,4,1,Yes,1991,4,2,6,1,,60,Centro,No,Yes,Unsure,No,Yes,Yes
+01-07-24,A226,Spanish,Mother,1,West End Berrinche,No,Clinic,7,4,Yes,1990,all,6,9,2,,15,Centro,Yes,Yes,Yes,No,Yes,Yes
+01-07-24,A227,Spanish,Mother,2,Mantrap - CoxenHole ,No,Clinic,3,1,Yes,2000,all,6,ultimo ano de carrera,3,40,25,"CE, Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+01-07-24,A228,Spanish ,Mother,1,Colonia - Bella Vista ,Yes,Clinic,4,1,Yes,1981,20,4,6,1,30,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+01-07-24,A229,Spanish ,Mother,1,Sandy Bay,No,Clinic,4,2,Yes,1993,28,5,bachelarito de ciencas y letra,3,,3,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+01-07-24,A230,English,Grandmother,3,Corozal,No,Clinic,4,1,Yes,1965,all,6,6,1,,20,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+01-07-24,A231,Spanish,Mother,2,La Colonia Punta Cariba - Coxen Hole,Yes,Clinic,3,1,Yes,1998,10,3,bachilerato,3,,30,Centro,Yes,Yes,Unsure,Yes,Yes,Yes
+01-07-24,A232,Spanish,Mother,2,El swampo,No,Clinic,5,3,No,2001,18,4,6,1,,30,Hosp ,Yes,Yes,Yes,Yes,Yes,Yes
+01-07-24,A233,Spanish,Mother,2,Spanish Town,No,Clinic,4,2,Yes,1993,0.42,1,6,1,,25,La Ceiba,No ,Unsure,Yes,No,Yes,Yes
+01-07-24,A234,Spanish,Sister,3,Crawfish Rock,No,Community,4,1,Yes,2005,18,4,ahorita ultimo,3,,,"Hosp, Brigade",Yes,Unsure,Yes,Unsure,Yes,Yes
+01-07-24,A235,Spanish,Aunt,3,Crawfish Rock,No,Communtiy,4,2,Yes,1997,0.5,1,9,2,,,"CE, Centro ",Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,B1,Spanish,,1,La Colonia,Yes,Community,4,2,,,2,2,6,1,,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,B2,Spanish,,1,La Colonia,Yes,Community,7,1,,,,,6,1,30,,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,B3,Spanish,,1,La Colonia,Yes,Community,5,2,,,15,4,6,1,15,,,Yes,Yes,Unsure,Yes,Yes,Yes
+21-05-24,B4,Spanish,,1,La Colonia,Yes,Community,,,,,all,6,,,30,,,No,Yes,Yes,Yes,Yes,Yes
+21-05-24,B5,Spanish,,1,La Colonia,Yes,Community,5,1,,,20,4,,,,8,,Yes,Yes,Yes,Yes,Yes,Yes
+21-05-24,B6,Spanish,,1,La Colonia,Yes,Community,5,2,,,20,4,,,30,,,No,Yes,Yes,Yes,Yes,Yes
+21-05-24,B7,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,25,5,,,12.5,,,Yes,Yes,Unsure,Yes,Yes,Yes
+21-05-24,B8,Spanish,,1,La Colonia,Yes,Community,4,2,,,20,4,,,20,5,,Yes,Yes,Yes,Unsure,Yes,Yes
+22-05-24,B9,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,8,3,12,3,5,,,Yes,Yes,No,No,Yes,Yes
+22-05-24,B10,Spanish,,1,La Colonia,Yes,Community,6,1,Yes,,21,5,6,1,15,3,,Yes,Unsure,No,Yes,Yes,Yes
+22-05-24,B11,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,10,3,6,1,,,,Yes,Yes,No,Yes,Yes,Yes
+22-05-24,B12,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,,15,4,6,1,30,,,Yes,Yes,No,Yes,Yes,Yes
+22-05-24,B13,Spanish,,1,La Colonia,Yes,Community,8,5,Yes,,11,4,12,3,,3,,Yes,Yes,Yes,Yes,Yes,Yes
+22-05-24,B14,Spanish,,1,La Colonia,Yes,Community,6,2,Yes,,11,4,9,2,17.5,,,Yes,Yes,No,Yes,Yes,Yes
+22-05-24,B15,Spanish,,1,La Colonia,Yes,Community,7,2,Yes,,all,6,9,2,30,,,Yes,Yes,No,,Yes,Yes
+23-05-24,B16,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,2,2,6,1,5,,,Yes,Yes,No,Yes,Yes,Yes
+23-05-24,B17,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,0.67,1,6,1,15,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,B18,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,,many,7,6,1,15,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,B19,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,,10,3,6,1,10,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,B20,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,,32,5,2,1,20,,,Yes,No,Yes,Yes,Yes,Yes
+23-05-24,B21,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,28,5,6,1,,5,,Yes,No,Yes,Yes,Yes,Yes
+23-05-24,B22,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,12,4,12,3,10,,,Yes,Yes,No,Yes,Yes,Yes
+23-05-24,B23,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,12,4,4,1,30,,,Yes,Yes,Yes,Yes,Yes,Yes
+23-05-24,B24,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,,24,5,8,2,,4,,No,Yes,No,Yes,Yes,Yes
+23-05-24,B25,Spanish,,1,La Colonia,Yes,Community,5,3,Yes,,15,4,12,3,35,,,Yes,Yes,Unsure,Yes,Yes,Yes
+24-05-24,B26,Spanish,,1,La Colonia,Yes,Community,11,6,No,,24,5,6,1,5,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,B27,Spanish,,1,La Colonia,Yes,Community,7,4,Yes,,17,4,4,1,15,,,Yes,Unsure,Unsure,Yes,Yes,Yes
+24-05-24,B28,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,,24,5,3,1,15,6,,Unsure,Yes,Yes,Yes,Yes,Yes
+24-05-24,B29,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,,5,2,3,1,,10,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,B30,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,,13,4,10,3,15,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,B31,Spanish,,1,La Colonia,Yes,Community,3,2,Yes,,28,5,3,1,5,,,No,Yes,Unsure,Yes,Yes,Yes
+24-05-24,B32,Spanish,,1,La Colonia,Yes,Community,5,4,Yes,,20,4,6,1,10,,,Yes,Unsure,No,Yes,Yes,Yes
+24-05-24,B33,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,,all,6,11,3,,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,B34,Spanish,,1,La Colonia,Yes,Community,5,1,Yes,,9,3,2,1,10,,,Yes,Yes,Yes,Yes,Yes,Yes
+24-05-24,B35,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,,9,3,7,2,15,,,Yes,Unsure,Unsure,No,Yes,Yes
+24-05-24,B36,Spanish,,1,La Colonia,Yes,Community,7,3,Yes,,21,5,4,1,15,,,Yes,Yes,No,Yes,Yes,Yes
+24-05-24,B37,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,,1.33,2,8,2,10,,,Yes,Unsure,Yes,Yes,Yes,Yes
+24-05-24,B38,Spanish,,1,La Colonia,Yes,Community,8,2,Yes,,all,6,ultimosanos,3,20,,,Yes,Yes,Yes,Yes,Yes,Yes
+27-05-24,B39,Spanish,,4,Los Fuertes,No,Clinic,3,1,Yes,,all,6,bachillerato,3,,60,,Yes,Unsure,Yes,Yes,Yes,Yes
+24-05-24,B41,Spanish,,1,Cerca de la playa,No,Clinic,6,2,Yes,,12,4,11,3,,10,,Unsure,Yes,Yes,Yes,Yes,Yes
+24-05-24,B42,Spanish,,2,Los Laureles,No,Community,4,2,Yes,,27,5,escuela de turismo,3,,30,Hosp,Yes,Yes,Unsure,Yes,Yes,Yes
+24-05-24,B43,Spanish,,2,Los Laureles,No,Community,4,2,Yes,,7,3,3,1,,30,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+27-05-24,B44,Spanish,,2,Los Laureles,No,Community,6,3,Yes,,11,4,12,3,,30,Hosp,Yes,Unsure,Unsure,No,Yes,Yes
+28-05-24,B45,Spanish,,1,La Colonia,Yes,Community,7,2,No,1991,25,5,6,1,,,Hosp,Yes,Unsure,Unsure,Unsure,Yes,Yes
+28-05-24,B46,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,1995,0.33,1,9,2,20,,,Yes,Yes,Yes,Yes,Yes,Yes
+28-05-24,B47,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,2000,all,6,12,3,,9,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-05-24,B48,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,2001,8,3,12,3,,10,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+28-05-24,B49,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,1993,15,4,7,2,25,,"Hosp, Brigade",Yes,Yes,No,Yes,Yes,Yes
+28-05-24,B50,Spanish,,1,La Colonia,Yes,Community,6,1,Yes,2008,1,2,9,2,30,,Centro,No,Unsure,Unsure,No,Yes,Yes
+28-05-24,B51,Spanish,,1,La Colonia,Yes,Community,6,2,Yes,1986,18,4,6,1,20,,Hosp,Yes,Yes,Unsure,Yes,Yes,Yes
+29-05-24,B52,Spanish,,1,La Colonia,Yes,Community,5,1,Yes,1971,33,5,6,1,,3,Hosp,No,No,No,No,No,No
+29-05-24,B53,Spanish,,1,La Colonia,Yes,Community,6,2,Yes,1988,8,3,3,1,20,,"Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,B54,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1998,all,6,colegio,3,20,,Hosp,Yes,Unsure,Unsure,Unsure,Yes,Yes
+29-05-24,B55,Spanish,,1,La Colonia,Yes,Community,5,1,Yes,1988,17.5,4,4,1,25,,CE,Yes,Yes,Unsure,Yes,Yes,Yes
+29-05-24,B56,Spanish,,1,La Colonia,Yes,Community,5,2,Yes,1994,8,3,graduó de comercio,3,15,,CE,Yes,Yes,Yes,Unsure,Yes,Yes
+29-05-24,B57,Spanish,,1,La Colonia,Yes,Community,6,4,Yes,1999,0.25,1,9,2,,5,CE,Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,B58,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,2002,19,4,5,1,25,,Hosp,Unsure,Yes,Yes,Unsure,Yes,Yes
+29-05-24,B59,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,2008,3,2,5,1,20,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+29-05-24,B60,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,1985,1.5,2,6,1,20,,Centro,No,Unsure,Yes,Yes,Yes,Yes
+30-05-24,B61,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1997,12,4,primero de enfermería,4,15,5,"Hosp, Centro",Yes,Yes,No,Yes,Yes,Yes
+30-05-24,B62,Spanish,,1,La Colonia,Yes,Community,6,2,Yes,1991,all,6,6,1,,5,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+30-05-24,B63,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1999,15,4,12,3,15,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+30-05-24,B64,Spanish,,1,La Colonia,Yes,Community,5,2,No,1982,17,4,bachillerato  ,3,10,,"CE, Hosp, Brigade",Yes,Yes,No,Yes,Yes,Yes
+30-05-24,B65,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1994,8,3,6,1,30,,"CE, Centro",No,Yes,Yes,Unsure,Yes,Yes
+30-05-24,B66,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1995,7,3,6,1,20,,Hosp,Yes,Yes,Yes,Unsure,Yes,Yes
+30-05-24,B67,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,1995,all,6,bachillerato,3,,5,Hosp,Yes,Unsure,Unsure,Yes,Yes,Yes
+30-05-24,B68,Spanish,,1,La Colonia,Yes,Community,8,4,No,1999,1,2,8,2,15,,"Hosp, Centro",Yes,Unsure,Unsure,Unsure,Yes,Yes
+31-05-24,B69,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,2002,0.25,1,12,3,10,,"Centro, Brigade",Unsure,Unsure,Yes,Yes,Yes,Yes
+31-05-24,B70,Spanish,,1,La Colonia,Yes,Community,6,3,Yes,1973,30,5,6,1,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,B71,Spanish,,1,La Colonia,Yes,Community,4,2,Yes,1996,2,2,8,2,15,,"CE, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+31-05-24,B72,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,2004,all,6,7,2,15,,Centro,Unsure,Yes,Unsure,Yes,Yes,Yes
+31-05-24,B73,Spanish,,1,La Colonia,Yes,Community,4,2,No,1984,27,5,0,0,,,Hosp,No,Unsure,Yes,Yes,Yes,Yes
+31-05-24,B74,Spanish,,1,La Colonia,Yes,Community,3,1,Yes,2000,2,2,8,2,10,,"CE, Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B75,Spanish,,3,Corozal,No,Community,4,1,Yes,1973,all,6,6,1,,4,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+04-06-24,B76,Spanish,,3,Corozal,No,Community,4,1,Yes,1989,7,3,8,2,,30,Hosp,Unsure,Yes,Unsure,Yes,Yes,Yes
+04-06-24,B77,Spanish,,3,Corozal,No,Community,8,2,Yes,2002,2,2,bachillerato de informáticas,3,,,Other,Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B78,Spanish,,3,Corozal,No,Community,5,1,,2000,all,6,bachillerato  ,3,,15,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B79,Spanish,,3,Corozal,No,Community,,4,,1992,all,6,bachillerato de comercio & financial,3,,15,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B80,Spanish,Grandfather,3,Corozal,No,Community,4,2,Yes,1966,all,6,6,1,,25,Brigade,Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B81,Spanish,Grandmother,3,Corozal,No,Community,7,1,Yes,1966,50,5,3,1,,15,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+04-06-24,B82,Spanish,,3,Corozal,No,Community,8,4,Yes,,,,,,,25,CE,Yes,Yes,Yes,Yes,Yes,Yes
+05-06-24,B83,Spanish,,1,La Colonia,Yes,Community,9,5,Yes,1987,1,2,2,1,,,Centro,No,Yes,Unsure,Yes,Yes,Yes
+05-06-24,B84,Spanish,,1,La Colonia,Yes,Community,6,1,No,2002,all,6,bachillerato,3,,15,"Hosp, Centro",Yes,Unsure,Yes,Unsure,Yes,Yes
+05-06-24,B85,Spanish,,1,La Colonia,Yes,Community,4,1,Yes,1990,20,4,6,1,,15,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+06-06-24,B86,Spanish,,3,Mud Hole,No,Community,3,2,Yes,2000,all,6,9,2,,35,Hosp,Yes,Yes,No,Yes,Yes,Yes
+06-06-24,B87,Spanish,,3,Mud Hole,No,Community,7,3,Yes,1995,9,3,6,1,,20,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+06-06-24,B88,Spanish,,3,Mud Hole,No,Community,4,2,Yes,1994,19,4,universidad,4,,30,CE,Yes,Yes,Yes,No,Yes,Yes
+06-06-24,B89,Spanish,,3,Mud Hole,No,Community,3,1,Yes,1976,32,5,cerrito infantil couldn't hear her -- finished all of it (probs mercantil),3,,,Hosp,Yes,Unsure,Unsure,Yes,Yes,Yes
+06-06-24,B90,Spanish,,3,Mud Hole,No,Community,4,1,Yes,1991,4,2,universitario,4,,30,"Hosp, Brigade",Yes,Unsure,No,Yes,Yes,Yes
+06-06-24,B91,Spanish,,3,Mud Hole,No,Community,9,4,Yes,1983,15,4,3,1,,,"CE, Hosp",Yes,Yes,Unsure,Yes,Yes,Yes
+07-06-24,B92,Spanish,,1,Aldin,No,Community,6,1,Yes,2000,15,4,estudiando bachillero ahora,3,,15,"Hosp, Centro",Yes,Unsure,Unsure,Yes,Yes,Yes
+07-06-24,B93,Spanish,,1,Aldin,No,Community,3,1,Yes,2002,4,2,8,2,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,B94,Spanish,,1,Aldin,No,Community,3,1,Yes,2005,18,4,5,1,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,B95,Spanish,,1,Aldin,No,Community,4,2,Yes,1985,17,4,6,1,30,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+07-06-24,B96,Spanish,,1,Aldin,No,Community,3,2,No,1990,10,3,6,1,30,,"Hosp, Brigade",No,Yes,Unsure,No,Yes,No
+10-06-24,B97,Spanish,,4,Brick Bay,No,Clinic,3,1,Yes,1998,all,6,bachillero,3,,30,Hosp,Yes,,,,,
+10-06-24,B98,Spanish,,1,Sandy Bay,No,Clinic,3,1,Yes,2000,all,6,7,2,,15,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+10-06-24,B99,Spanish,,1,La Colonia,Yes,Clinic,5,2,Yes,1988,20,4,7,2,20,,CE,Yes,Yes,Unsure,Unsure,Yes,Yes
+10-06-24,B100,Spanish,,1,La Colonia,Yes,Clinic,3,1,Yes,1995,8,3,9,2,20,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+11-06-24,B101,Spanish,,2,Cañaveral,No,Community,4,1,Yes,1991,all,6,6,1,,30,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+11-06-24,B102,English,Grandmother,2,Cañaveral,No,Community,,,,,,,,,,10,"Hosp, Brigade",No,Unsure,Unsure,Yes,Yes,Yes
+11-06-24,B103,Spanish,,2,Cañaveral,No,Community,9,2,Yes,1988,22,5,graduó turismo,3,,15,Hosp,Yes,Yes,Yes,No,Yes,Yes
+11-06-24,B104,Spanish,,2,Cañaveral,No,Community,6,4,No,1996,26,5,6,1,,15,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+12-06-24,B105,Spanish,,1,Sandy Bay,No,Clinic,3,1,Yes,1989,11,4,12,3,5,,Hosp,Yes,Unsure,Yes,No,Yes,Yes
+12-06-24,B106,Spanish,,4,Caramelo Los Fuertes,No,Clinic,3,0,Yes,1974,43,5,6,1,,25,Centro,Yes,Unsure,Unsure,Yes,Yes,Yes
+12-06-24,B107,English,Grandmother,2,Mann Trapp,No,Clinic,4,2,Yes,1966,all,6,12,3,,60,"Hosp, Brigade",Yes,Yes,No,Yes,Yes,Yes
+12-06-24,B108,Spanish,,1,West End,No,Clinic,3,1,Yes,2003,all,6,12,3,,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+12-06-24,B109,Spanish,,1,Flowers Bay,No,Clinic,3,1,Yes,1985,25,5,12,3,,30,"Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+13-06-24,B110,Spanish,Aunt,2,Coxen Hole,No,Clinic,6,1,Yes,2001,18,4,universidad,4,,10,Hosp,Yes,Unsure,Yes,Unsure,Yes,Yes
+13-06-24,B111,Spanish,Father,2,Coxen Cove,No,Clinic,3,1,Yes,1968,13,4,12,3,,30,"Hosp, Centro",Yes,Unsure,Yes,Yes,Yes,Yes
+13-06-24,B112,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,1990,16,4,bachillerato,3,,,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+13-06-24,B113,Spanish,Mother,1,West Bay,No,Clinic,3,2,Yes,1991,2,2,bachillerato,3,,15,"CE, Other",Yes,Yes,No,Yes,Yes,Yes
+13-06-24,B114,Spanish,Mother,4,Los fuertes ,No,Clinic,4,1,Yes,1988,9,3,bachillerato,3,,40,"CE, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+14-06-24,B115,Spanish,Mother,2,Consolation Bight - Coxen Hole,No,Clinic,4,2,Yes,1986,all,6,universidad pero no terminó,4,,30,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+14-06-24,B116,Spanish,Mother,2,Franco Flast - Coxen Hole,No,Clinic,4,2,Yes,1992,3,2,3,1,6,30,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+14-06-24,B117,Spanish,Mother,1,Constellation Bight,No,Clinic,6,3,Yes,2000,3,2,3,1,6,90,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,B118,Spanish,Mother,4,French Harbor,No,Clinic,14,6,Yes,1989,35,5,universitario,4,,30,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,B119,Spanish,Mother,1,Aldin,No,Clinic,4,2,Yes,1997,13,4,4,1,,60,"Hosp, Centro",Yes,Unsure,Yes,Unsure,Yes,Yes
+17-06-24,B120,Spanish,Mother,2,Franco Flats - Coxen Hole,No,Clinic,3,1,Yes,2003,5,2,12,3,,20,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+17-06-24,B121,Spanish,Mother,2,Guantiaple?,No,Clinic,4,2,Yes,1998,14,4,10,3,,15,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,B122,Spanish,Father,1,La Colonia - Balfate,Yes,Clinic,3,1,Yes,1988,4,2,9,2,20,,"Centro, Brigade",Yes,Yes,Unsure,Yes,Yes,Yes
+17-06-24,B123,Spanish,Mother,4,Brick Bay,No,Clinic,5,2,Yes,1991,all,6,6,1,,25,Hosp,No,Yes,Yes,Yes,Yes,Yes
+17-06-24,B124,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,1991,10,3,11,3,,20,CE,Yes,Yes,No,Yes,Yes,Yes
+17-06-24,B125,Spanish,Father,1,Bella Vista,Yes,Clinic,4,1,Yes,1965,42,5,3,1,25,,,Yes,Unsure,Yes,Yes,Yes,Yes
+17-06-24,B126,Spanish,Mother,2,Isla Bonita,No,Clinic,9,4,Yes,2008,all,6,9,2,,30,CE,Yes,Yes,Yes,Yes,Yes,Yes
+17-06-24,B127,Spanish,Mother,2,Coxen Hole,No,Clinic,2,1,Yes,2001,all,6,graduo de informatica,3,,30,CE,Yes,Yes,Yes,No,Yes,Yes
+18-06-24,B128,Spanish,Mother,3,Mud Hole,No,Clinic,4,1,Yes,1983,13,4,universidad (no terminó),4,,15,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,B129,Spanish,Mother,2,Spring Garden,No,Clinic,16,6,Yes,2005,all,6,9,2,,15,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,B130,Spanish,Mother,2,Spring Garden 2,No,Clinic,3,1,Yes,1994,16,4,12,3,,20,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+18-06-24,B131,Spanish,Mother,2,Coxen Hole,No,Clinic,7,2,Yes,2000,24,5,9,2,,30,Centro,Yes,Unsure,No,Yes,Yes,Yes
+18-06-24,B132,Spanish,Mother,3,Mud Hole 2,No,Community,3,1,Yes,1983,10,3,9,2,,20,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,B133,Spanish,Mother,3,Mud Hole 2,No,Community,4,1,Yes,1991,27,5,2 anos universitario,4,,15,"CE, Hosp",Yes,Yes,Yes,No,Yes,Yes
+18-06-24,B134,Spanish,Mother,3,Mud Hole 2,No,Community,4,1,Yes,1985,22,5,12,3,,15,"Hosp, Centro",Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,B135,Spanish,Mother,3,Mud Hole 2,No,Community,6,3,Yes,1992,all,6,bachillerato,3,,30,Hosp,Unsure,Yes,No,No,Yes,Yes
+18-06-24,B136,Spanish,Mother,3,Mud Hole 2,No,Community,5,2,No,2002,1,2,6,1,,,CE,Unsure,Yes,Yes,Yes,Yes,Yes
+18-06-24,B137,Spanish,Grandfather,3,Mud Hole 2,No,Community,6,2,Yes,1954,60,5,7,2,,10,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+18-06-24,B138,Spanish,Mother,3,Mud Hole 2,No,Community,4,1,Yes,1978,20,4,6,1,,30,Hosp,No,Unsure,Unsure,Yes,Yes,Yes
+18-06-24,B139,Spanish,Mother,2,Isla Bonita,No,Clinic,3,2,Yes,1992,all,6,bachillerato,3,,45,"Hosp, Brigade",Yes,Yes,No,No,Yes,Yes
+19-06-24,B140,Spanish,Mother,2,Spring Garden 2,No,Clinic,6,2,Yes,1994,5,2,8,2,,30,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B141,Spanish,Mother,5,Colonia Esperanza,No,Clinic,9,4,Yes,2003,6,3,6,1,,60,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B142,Spanish,Aunt,2,Coxen Hole,No,Clinic,4,1,Yes,2000,all,6,carrera,3,,20,"Hosp, Brigade",Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B143,Spanish,Father,4,Brick Bay,No,Clinic,3,1,Yes,2000,all,6,12,3,,15,CE,Yes,Yes,No,Yes,Yes,Yes
+19-06-24,B144,Spanish,Father,1,Policarpo 2,Yes,Community,5,2,Yes,1977,20,4,bachillerato,3,15,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B145,Spanish,Mother,1,Policarpo 2,Yes,Community,9,3,Yes,1978,28,5,6,1,5,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B146,Spanish,Mother,1,Policarpo 2,Yes,Community,7,2,Yes,1990,15,4,7,2,10,,CE,Yes,Yes,Yes,Yes,Yes,Yes
+19-06-24,B147,Spanish,Mother,1,Policarpo 2,Yes,Community,3,1,Yes,2001,22,5,graduó bachillerato,3,15,10,"CE, Centro",Yes,Yes,Yes,Unsure,Yes,Yes
+20-06-24,B148,Spanish,Mother,4,Santa Maria,No,Clinic,4,2,Yes,1994,10,3,9,2,,30,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+20-06-24,B149,Spanish,Mother,2,Coxen Hole,No,Clinic,4,2,Yes,1988,24,5,mercantil profesión,3,,30,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+20-06-24,B150,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,1995,3,2,12,3,,17.5,CE,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,B151,Spanish,Grandmother,2,Spring Garden 2,No,Clinic,3,1,Yes,1975,4,2,3,1,,30,"Hosp, Centro",Yes,Unsure,Unsure,Yes,Yes,Yes
+20-06-24,B152,English,Mother,1,Sandy Bay,No,Community,6,2,Yes,1998,all,6,12,3,,10,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+20-06-24,B153,Spanish + English,Father,1,Sandy Bay,No,Community,5,1,Yes,1981,38,5,11,3,,6,"Hosp, Centro",Yes,Yes,Unsure,Unsure,Yes,Yes
+21-06-24,B154,Spanish,Mother,1,Sandy Bay,No,Community,5,1,Yes,2007,all,6,5,1,,5,CE,Yes,Yes,Yes,No,Yes,Yes
+21-06-24,B155,Spanish,Grandmother,4,Los Fuertes,No,Clinic,6,2,Yes,1971,13,4,5,1,,25,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+21-06-24,B156,Spanish,Mother,1,La Colonia - Policarpo,Yes,Clinic,7,1,Yes,1983,28,5,7,2,20,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+21-06-24,B157,English,Grandmother,2,Spring Garden 2,No,Clinic,3,3,Yes,1952,all,6,9,2,,17.5,,Yes,Unsure,Yes,No,Yes,Yes
+21-06-24,B158,Spanish/English,Father,2,Loma Linda,No,Clinic,6,2,Yes,1993,28,5,5,1,,30,"Hosp, Other",Yes,Yes,Yes,Yes,Yes,Yes
+24-06-24,B159,Spanish,Mother,1,Policarpo,Yes,Clinic,3,1,Yes,1999,3,2,9,2,10,,"CE, Other",Yes,Yes,Unsure,Yes,Yes,Yes
+24-06-24,B160,Spanish,Mother,2,Brasil - Coxen Hole,No,Clinic,6,2,Yes,1987,20,4,5,1,,30,Hosp,Yes,Yes,,,,
+24-06-24,B161,Spanish,Mother,2,Spring Garden 1,No,Clinic,6,2,Yes,2003,all,6,7,2,,30,Hosp,Yes,Unsure,No,Unsure,Yes,Yes
+24-06-24,B162,Spanish,Mother,1,La Colonia - Balfate,Yes,Clinic,4,1,Yes,1994,all,6,12,3,,30,Hosp,Yes,Unsure,Yes,Yes,Yes,Yes
+24-06-24,B163,Spanish,Mother,4,Los Fuertes,No,Clinic,7,2,Yes,1986,all,6,0,0,,60,Centro,Yes,Yes,Unsure,Unsure,Yes,Yes
+25-06-24,B164,Spanish,Mother,1,La Colonia - Policarpo,Yes,Clinic,3,1,Yes,2003,10,3,bachillerato,3,,10,CE,Yes,Yes,No,Yes,Yes,Yes
+25-06-24,B165,Spanish,Grandmother,4,Los Fuertes,No,Clinic,3,1,Yes,1966,42,5,9,2,,45,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+25-06-24,B166,Spanish,Mother,5,Oak Ridge,No,Clinic,4,1,Yes,1995,all,6,bachillerato,3,,60,Centro,Yes,Unsure,Yes,Yes,Yes,Yes
+25-06-24,B167,Spanish,Mother,3,Mud Hole,No,Clinic,5,3,Yes,1990,0.08,1,9,2,,10,Other,Yes,Unsure,Yes,Yes,Yes,Yes
+25-06-24,B168,Spanish,Mother,1,Flowers Bay,No,Community,5,2,Yes,1996,on and off coming to island since she was born,9,9,2,,15,Other,Yes,Yes,Yes,Unsure,Yes,Yes
+25-06-24,B169,English,Mother & Father,1,Flowers Bay,No,Community,4,1,Yes,1984,all,6,11,3,,15,Hosp,Yes,Yes,Yes,No,Yes,Yes
+25-06-24,B170,English,Mother,1,Flowers Bay,No,Community,2,1,No,1996,all,6,12,3,,20,Other,Unsure,Yes,No,Yes,No,Yes
+25-06-24,B171,English,Mother,1,Flowers Bay,No,Community,2,1,Yes,1985,all,6,7,2,,15,Hosp,Yes,Yes,Unsure,No,Yes,Yes
+26-06-24,B172,Spanish,Mother,2,Coxen Hole - Colonia de los Maestros,No,Clinic,6,2,Yes,1997,all,6,bachillerato,3,,30,Brigade,Yes,Unsure,Yes,No,Yes,Yes
+26-06-24,B173,Spanish,Mother,5,Juticalpa,No,Clinic,5,1,Yes,1989,26,5,superio (bachillerato universidad),4,,60,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+26-06-24,B174,Spanish,Grandmother,1,La Colonia - Policarpo,Yes,Clinic,7,2,Yes,1968,23,5,6,1,,8,"Hosp, Other",Yes,Yes,Yes,Yes,Yes,Yes
+26-06-24,B175,Spanish,Mother,1,La Colonia,Yes,Community,5,2,Yes,1996,27,5,10,3,,10,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+26-06-24,B176,Spanish,Mother,1,La Colonia - Policarpo Zapote?,Yes,Community,3,1,Yes,1998,9,3,6,1,25,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+26-06-24,B177,Spanish,Grandmother,1,La Colonia - Balfate,Yes,Community,8,2,Yes,1975,4,2,6,1,25,,Brigade,No,Yes,Yes,No,Yes,Yes
+26-06-24,B178,Spanish,Mother,1,La Colonia,Yes,Community,6,2,Yes,1988,all,6,6,1,15,,Hosp,Yes,Yes,Yes,No,Yes,Yes
+27-06-24,B179,Spanish,Mother,2,Franco Flats - Coxen Hole,No,Clinic,6,2,Yes,2002,9,3,9,2,,30,Hosp,Yes,Yes,Unsure,Yes,Yes,Yes
+27-06-24,B180,Spanish,Mother,3,Hottest Sparrow,No,Clinic,4,1,Yes,1988,15,4,6,1,,,Hosp,No,Unsure,Unsure,Yes,Yes,Yes
+27-06-24,B181,English,Mother,4,French Harbor,No,Clinic,5,2,Yes,1981,all,6,10,3,,22.5,Centro,Yes,Yes,Yes,No,Yes,Yes
+27-06-24,B182,Spanish/English,Mother,1,La Colonia - Balfate,Yes,Clinic,3,1,Yes,1996,all,6,universidad,4,10,5,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+27-06-24,B183,Spanish,Father,4,Colonia Santa María,No,Clinic,4,1,Yes,1978,36,5,primaria,1,,45,Other,Yes,Yes,Yes,No,Yes,Yes
+27-06-24,B184,Spanish,Mother,1,La Colonia - Bella Vista,Yes,Clinic,4,1,Yes,1981,20,4,3,1,30,,"Hosp, Brigade",Yes,Yes,No,Yes,Yes,Yes
+27-06-24,B185,Spanish,Mother,3,Hottest Sparrow,No,Community,4,2,Yes,1999,12,4,6,1,,30,Centro,Yes,Yes,Yes,Yes,Yes,Yes
+27-06-24,B186,Spanish,Mother,3,Hottest Sparrow,No,Community,3,1,Yes,2004,0.25,1,9,2,,20,"Brigade, Other",Yes,Unsure,Yes,Yes,Yes,Yes
+27-06-24,B187,English,Mother,3,Hottest Sparrow,No,Community,4,2,Yes,1993,all,6,11,3,,25,Hosp,No,Yes,Unsure,,Yes,Yes
+27-06-24,B188,Spanish,Mother,3,Hottest Sparrow,No,Community,4,2,Yes,1990,10,3,6,1,,20,"Hosp, Brigade",Yes,Unsure,Yes,Yes,Yes,Yes
+27-06-24,B189,Spanish,Mother,3,Hottest Sparrow,No,Community,5,3,Yes,1997,1.5,2,"plan basico, carrera uno?",3,,35,Other,Yes,Yes,Yes,Unsure,Yes,Yes
+27-06-24,B190,Spanish,Mother,3,Hottest Sparrow,No,Community,6,1,Yes,2002,all,6,carrera/bachillerato,3,,25,Other,Yes,Unsure,Yes,No,Yes,Yes
+27-06-24,B191,English,Sister,3,Hottest Sparrow,No,Community,6,1,Yes,2007,all,6,11,3,,27.5,,,,,,,
+28-06-24,B192,Spanish/English,Mother,1,Gravel Bay,No,Clinic,4,2,Yes,1992,all,6,bachillerato,3,,30,Hosp,Yes,Unsure,No,No,Yes,Yes
+28-06-24,B193,Spanish,Mother,3,Corozal,No,Clinic,5,3,Yes,1991,20,4,universitario,4,,12,"CE, Hosp",Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,B194,Spanish,Mother,1,West End,No,Clinic,5,3,Yes,1994,10,3,6,1,30,,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+28-06-24,B195,Spanish,Mother,2,Coxen Hole,No,Clinic,3,1,Yes,2001,1,2,bachillerato,3,,30,Hosp,Yes,Yes,No,Yes,Yes,Yes
+28-06-24,B196,Spanish,Mother,1,Flowers Bay,No,Clinic,4,2,Yes,1996,5,2,universidad,4,,20,Other,Yes,Unsure,Yes,Yes,Yes,Yes
+28-06-24,B197,Spanish,Grandmother,1,Sandy Bay,No,Clinic,4,1,Yes,1981,30,5,6,1,10,,CE ,Yes,Yes,Unsure,Yes,Yes,Yes
+28-06-24,B198,Spanish,Mother,4,Los Fuertes,No,Clinic,7,1,Yes,1996,4,2,6,1,,60,Centro,No,Unsure,Yes,No,Yes,Yes
+29-06-24,B199,Spanish,Grandmother,1,Berrinche,No,Community,3,0,No,1965,29,5,8,2,,15,Hosp,Yes,Yes,No,Yes,Yes,Yes
+29-06-24,B200,Spanish,Sister,1,Berrinche,No,Community,6,1,Yes,2006,all,6,9,2,,15,CE,Yes,Yes,Yes,Yes,Yes,Yes
+29-06-24,B201,Spanish,Mother,1,Berrinche,No,Community,4,2,Yes,1996,6,3,6,1,,5,"CE, Hosp, Other",Yes,Yes,Yes,Yes,Yes,Yes
+29-06-24,B202,Spanish,Mother,1,Berrinche,No,Community,6,2,Yes,1985,36,5,1,1,,5,Hosp,Yes,Yes,Yes,Yes,Yes,Yes
+01-07-24,B203,Spanish,Sister,3,Crawfish Rock,No,Community,4,2,Yes,2003,no recuerdo,8,ultimo de carrera currently,3,,,"Centro, Brigade",Yes,Yes,Unsure,Yes,Yes,Yes
+01-07-24,B204,Spanish,Grandmother,3,Crawfish Rock,No,Community,6,2,Yes,1963,siempre vengo y voy,9,8,2,,,"Centro, Other",Yes,Unsure,,Yes,Yes,Yes

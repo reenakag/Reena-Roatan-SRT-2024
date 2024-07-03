@@ -63,13 +63,51 @@ pie(slices, labels = labels, col = rainbow(length(labels)), main = "Pie Chart of
 ```{r}
 #| label: age
 
-mean_age <- mean(Quant_Unknowns$age)
-print(mean_age)
+# average age
+Quant_Unknowns |>
+  summarise(mean_age = mean(age, na.rm = TRUE))
 
-# average
-#Quant_Unknowns <- Quant_Unknowns |>
- # mutate(age = factor(age)) |>
- # mutate(age = as.numeric(age))
-  #mean(age)
+# distribution of ages count
+Quant_Unknowns |>
+  group_by(age) |>
+  count()
+
+# distribution of ages bar chart
+Quant_Unknowns |> ggplot(
+  aes(x = age, fill = age)
+) +
+  geom_bar() +
+  labs(title = "Ages of Children Accounted For", subtitle = "No Vaccine Cards")
+  
+# boxplot of ages
+Quant_Unknowns |> ggplot(
+  aes(x = age, y = gender)
+) +
+  geom_boxplot() +
+  labs(title = "Ages of Children Accounted For", subtitle = "No Vaccine Cards")
+
+```
+
+```{r}
+#| label: how_many_vax visualizations
+
+# frequency table
+Quant_Unknowns |>
+  count(how_many_vax) |>
+  mutate(prop = n/sum(n))
+
+# bar chart
+Quant_Unknowns <- Quant_Unknowns |>
+  mutate(how_many_vax = as.factor(how_many_vax)) |>
+  mutate(how_many_vax = factor(how_many_vax, levels = c("None", "Some", "All", "Unsure")))
+
+Quant_Unknowns |> ggplot(
+  aes(x = how_many_vax, fill = how_many_vax)
+) +
+  geom_bar() +
+  labs(title = "Vaccination Status of Children without Vaccine Cards", 
+       x = "How Many Vaccines the Child Has Received")
+
+
 ```
 

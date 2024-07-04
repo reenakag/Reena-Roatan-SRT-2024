@@ -14,7 +14,7 @@ library(broom)
 
 ```{r}
 library(readr)
-QUANT_vax_cards <- read_csv("RStudio_GitHub Merged Data (QUANT) - A+B Vax Cards (3).csv", 
+QUANT_vax_cards <- read_csv("QUANT_vax_cards.csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y")))
 ```
 
@@ -55,11 +55,11 @@ QUANT_vax_cards
 ```
 
 ```{r}
-#| label: adding-vax-score
+#| label: desired-vax-score
 
 vax_score_tibble <- QUANT_vax_cards |>
   mutate(date_of_survey = as.Date(date)) |>
-  select(date_of_survey, gender, dob, dob_date_format) 
+  select(group, date_of_survey, gender, dob, dob_date_format) 
   
   #mutate(dob_day = day(dob_date_format),
   #       dob_month = month(dob_date_format),
@@ -84,7 +84,7 @@ vax_score_tibble <- vax_score_tibble |>
                                      if_else(age_rounded >= 11 & gender == "F", 21, 0))))))))))
 
 vax_score_tibble <- vax_score_tibble |>
-  select(dob_date_format, age_rounded, desired_vax_score) 
+  select(group, dob_date_format, age_rounded, desired_vax_score) 
 vax_score_tibble
 
 ```
@@ -97,4 +97,61 @@ Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards.csv",
 View(Consolidated_QUANT_Vax_Cards)
 ```
 
+```{r}
+#| label: actual-vax-score
+
+vaccine_schedule <- Consolidated_QUANT_Vax_Cards
+
+vaccine_final <- tibble(
+  survey_date = vaccine_schedule$date,
+  group = vaccine_schedule$group,
+  child_gender = vaccine_schedule$gender,
+  child_dob = vaccine_schedule$dob,
+  hep_b_status = ifelse(!is.na(vaccine_schedule$hep_b), "YES", "NO"),
+  bcg_status = ifelse(!is.na(vaccine_schedule$bcg), "YES", "NO"),
+  polio_vpi1_status = ifelse(!is.na(vaccine_schedule$polio_vpi1), "YES", "NO"),
+  polio_vpi2_status = ifelse(!is.na(vaccine_schedule$polio_vpi2), "YES", "NO"),
+  polio_vop1_status = ifelse(!is.na(vaccine_schedule$polio_vop1), "YES", "NO"),
+  polio_vop2_status = ifelse(!is.na(vaccine_schedule$polio_vop2), "YES", "NO"),
+  polio_vop3_status = ifelse(!is.na(vaccine_schedule$polio_vop3), "YES", "NO"),
+  penta1_status = ifelse(!is.na(vaccine_schedule$penta1), "YES", "NO"),
+  penta2_status = ifelse(!is.na(vaccine_schedule$penta2), "YES", "NO"),
+  penta3_status = ifelse(!is.na(vaccine_schedule$penta3), "YES", "NO"),
+  neumo1_status = ifelse(!is.na(vaccine_schedule$neumo1), "YES", "NO"),
+  neumo2_status = ifelse(!is.na(vaccine_schedule$neumo2), "YES", "NO"),
+  neumo3_status = ifelse(!is.na(vaccine_schedule$neumo3), "YES", "NO"),
+  rota1_status = ifelse(!is.na(vaccine_schedule$rota1), "YES", "NO"),
+  rota2_status = ifelse(!is.na(vaccine_schedule$rota2), "YES", "NO"),
+  hep_a_status = ifelse(!is.na(vaccine_schedule$hep_a), "YES", "NO"),
+  dpt1_status = ifelse(!is.na(vaccine_schedule$dpt1), "YES", "NO"),
+  dpt2_status = ifelse(!is.na(vaccine_schedule$dpt2), "YES", "NO"),
+  vph_1_status = ifelse(!is.na(vaccine_schedule$vph_1), "YES", "NO"),
+  tetanus_dip_status = ifelse(!is.na(vaccine_schedule$tetanus_dip), "YES", "NO"))
+
+vaccine_final <- vaccine_final |>
+  rowwise() |>
+  mutate(yes_count = sum(c_across(hep_b_status:tetanus_dip_status) == "YES"))
+print(vaccine_final)
+
+vaccine_final <- vaccine_final |>
+  rename(dob = child_dob)
+
+actual_vax_score <- vaccine_final |>
+  select(group, dob, yes_count)
+
+```
+
+```{r}
+#| label: join!
+
+joined_vax_cards <- actual_vax_score |>
+  left_join(vax_score_tibble, by = join_by(group))
+```
+
+```{r}
+#| label: has-all-vax
+
+joined_vax_cards <- joined_vax_cards |>
+  mutate(complete = if_else(yes_count >= desired_vax_score, TRUE, FALSE))
+```
 

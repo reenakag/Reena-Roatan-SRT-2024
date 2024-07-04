@@ -14,9 +14,8 @@ library(broom)
 
 ```{r}
 library(readr)
-QUANT_vax_cards <- read_csv("QUANT_vax_cards.csv", 
+QUANT_vax_cards <- read_csv("RStudio_GitHub Merged Data (QUANT) - A+B Vax Cards (3).csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y")))
-View(QUANT_vax_cards)
 ```
 
 ```{r}
@@ -47,13 +46,12 @@ pie(slices, labels = labels, col = rainbow(length(labels)), main = "Pie Chart of
 ```{r}
 #| label: date format
 
-dob_date_format_tibble <- QUANT_vax_cards |>
-  select(dob, dob_date_format) |>
+QUANT_vax_cards <- QUANT_vax_cards |>
+  mutate(dob_date_format = as.Date(dob, "%d-%m-%Y")) |>
   mutate(day = day(dob_date_format),
          month = month(dob_date_format),
          year = year(dob_date_format))
-
-dob_date_format_tibble
+QUANT_vax_cards
 ```
 
 ```{r}

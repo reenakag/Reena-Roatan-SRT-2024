@@ -153,5 +153,6 @@ joined_vax_cards <- actual_vax_score |>
 
 joined_vax_cards <- joined_vax_cards |>
   mutate(complete = if_else(yes_count >= desired_vax_score, TRUE, FALSE))
+joined_vax_cards
 ```
 

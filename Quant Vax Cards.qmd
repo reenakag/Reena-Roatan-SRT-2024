@@ -60,22 +60,43 @@ dob_date_format_tibble
 #| label: adding-vax-score
 
 vax_score_tibble <- QUANT_vax_cards |>
-  select(dob, dob_date_format) |>
-  mutate(dob_day = day(dob_date_format),
-         dob_month = month(dob_date_format),
-         dob_year = year(dob_date_format))
+  mutate(date_of_survey = as.Date(date)) |>
+  select(date_of_survey, gender, dob, dob_date_format) 
+  
+  #mutate(dob_day = day(dob_date_format),
+  #       dob_month = month(dob_date_format),
+  #       dob_year = year(dob_date_format))
 
-today = Sys.Date()
 
 vax_score_tibble <- vax_score_tibble |>
-  mutate(age_in_days = today - dob_date_format) |>
+  mutate(age_in_days = date_of_survey - dob_date_format) |>
   mutate(age_in_years = as.numeric(age_in_days) / 365.25) |>
   mutate(age_rounded = round(age_in_years, 1))
 
-vax_score_tibble
 
- # ,
-   #      age_months = months(today_month) - month,
-   #      age_year = years(today_year) - year)
+vax_score_tibble <- vax_score_tibble |>
+  mutate(desired_vax_score = if_else(age_rounded < 0.2, 2, 
+                              if_else(age_rounded >= 0.2 & age_rounded < 0.3, 5,
+                               if_else(age_rounded >= 0.3 & age_rounded < 0.5, 8,
+                                if_else(age_rounded >= 0.5 & age_rounded < 1.0, 11, 
+                                 if_else(age_rounded >= 1.0 & age_rounded < 1.5, 13,
+                                  if_else(age_rounded >= 1.5 & age_rounded < 4, 14,
+                                   if_else(age_rounded >= 4 & age_rounded < 5, 15,
+                                    if_else(age_rounded >= 5 & age_rounded < 11, 16,
+                                     if_else(age_rounded >= 11 & gender == "M", 17,
+                                      if_else(age_rounded >= 11 & gender == "F", 18, 0)))))))))))
+
+vax_score_tibble <- vax_score_tibble |>
+  select(dob_date_format, age_rounded, desired_vax_score) 
+vax_score_tibble         
+           
+#case_when(
+#    age_rounded < 0.2 ~ 2
+#    age_rounded >= 0.2 && age_rounded < 0.3 ~ 5
+#    age_rounded >= 0.3 && age_rounded < 0.5 ~ 8
+#    age_rounded >= 0.5 && age_rounded < 1.0 ~11
+#    TRUE ~0
+
+
 ```
 

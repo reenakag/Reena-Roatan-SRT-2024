@@ -49,6 +49,7 @@ Quant_Unknowns |> ggplot(
 ) +
   geom_bar() +
   labs(title = "Genders of Children Accounted For", subtitle = "No Vaccine Cards")
+ggsave("Gender_No_Vax_Card.png")
 
 # pie chart
 slices <- c(210, 191, 63)
@@ -106,8 +107,10 @@ Quant_Unknowns |> ggplot(
 ) +
   geom_bar() +
   labs(title = "Vaccination Status of Children without Vaccine Cards", 
-       x = "How Many Vaccines the Child Has Received")
-
+       x = "How many vaccines has your child received?",
+       y = "# of children", 
+       fill = "Vaccination Status")
+ggsave("Vaccination Status of Children without Vaccine Cards.png")
 
 ```
 

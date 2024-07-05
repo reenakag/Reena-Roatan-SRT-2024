@@ -144,10 +144,56 @@ joined_vax_cards |>
 
 new_tibble <- vax_score_tibble |>
   left_join(vaccine_final, by = join_by(group)) |>
-  select(!c(group, dob.x, dob.y, survey_date, child_gender)) |>
-  mutate(hep_b_should = if_else(age_rounded > 0, "YES", "NO")) |>
-  mutate(hep_b_match = if_else(hep_b_status == hep_b_should, "YES", "NO")) 
+  select(!c(group, dob.x, dob.y, survey_date)) 
 
+new_tibble <- new_tibble |>
+  mutate(hep_b_should = if_else(age_rounded > 0, "YES", "NO")) |>
+  mutate(hep_b_match = if_else(hep_b_status == hep_b_should, "YES", "NO")) |>
+  mutate(bcg_should = if_else(age_rounded > 0, "YES", "NO")) |>
+  mutate(bcg_match = if_else(bcg_status == bcg_should, "YES", "NO")) |>
+  mutate(polio_vpi1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
+  mutate(polio_vpi1_match = if_else(polio_vpi1_status == polio_vpi1_should, "YES", "NO")) |>
+  mutate(polio_vpi2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
+  mutate(polio_vpi2_match = if_else(polio_vpi2_status == polio_vpi2_should, "YES", "NO")) |>
+  mutate(polio_vop1_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
+  mutate(polio_vop1_match = if_else(polio_vop1_status == polio_vop1_should, "YES", "NO")) |>
+  mutate(polio_vop2_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
+  mutate(polio_vop2_match = if_else(polio_vop2_status == polio_vop2_should, "YES", "NO")) |>
+  # skipping polio vop3 because not considering mandatory (it's extra, we are only including 4 polio shots as required)
+  mutate(penta1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
+  mutate(penta1_match = if_else(penta1_status == penta1_should, "YES", "NO")) |>
+  mutate(penta2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
+  mutate(penta2_match = if_else(penta2_status == penta2_should, "YES", "NO")) |>
+  mutate(penta3_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
+  mutate(penta3_match = if_else(penta3_status == penta3_should, "YES", "NO")) |>
+  mutate(neumo1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
+  mutate(neumo1_match = if_else(neumo1_status == neumo1_should, "YES", "NO")) |>
+  mutate(neumo2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
+  mutate(neumo2_match = if_else(neumo2_status == neumo2_should, "YES", "NO")) |>
+  mutate(neumo3_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
+  mutate(neumo3_match = if_else(neumo3_status == neumo3_should, "YES", "NO")) |>
+  mutate(rota1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
+  mutate(rota1_match = if_else(rota1_status == rota1_should, "YES", "NO")) |>
+  mutate(rota2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
+  mutate(rota2_match = if_else(rota2_status == rota2_should, "YES", "NO")) |>
+  mutate(srp1_should = if_else(age_rounded >= 1.0, "YES", "NO")) |>
+  mutate(srp1_match = if_else(srp1_status == srp1_should, "YES", "NO")) |>
+  mutate(srp2_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
+  mutate(srp2_match = if_else(srp2_status == srp2_should, "YES", "NO")) |>
+  mutate(hep_a_should = if_else(age_rounded >= 1.0, "YES", "NO")) |>
+  mutate(hep_a_match = if_else(hep_a_status == hep_a_should, "YES", "NO")) |>
+  mutate(dpt1_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
+  mutate(dpt1_match = if_else(dpt1_status == dpt1_should, "YES", "NO")) |>
+  mutate(dpt2_should = if_else(age_rounded >= 4, "YES", "NO")) |>
+  mutate(dpt2_match = if_else(dpt2_status == dpt2_should, "YES", "NO")) |>
+  mutate(vph_1_should = if_else(age_rounded >= 11  & child_gender == "F", "YES", "NO")) |>
+  mutate(vph_1_match = if_else(vph_1_status == vph_1_should, "YES", "NO")) |>
+  mutate(tetanus_dip_should = if_else(age_rounded >= 11, "YES", "NO")) |>
+  mutate(tetanus_dip_match = if_else(tetanus_dip_status == tetanus_dip_should, "YES", "NO"))
+
+  
+
+###### Hep B ######
 match_tibble <- new_tibble |>
   count(hep_b_match)
 
@@ -164,8 +210,8 @@ num_yes_should <- should_tibble |>
   pull(n)
 print(num_yes_should)
 
-percent_adherence = num_yes_match / num_yes_should
-print(percent_adherence)
+hep_b_percent_adherence = num_yes_match / num_yes_should
+print(hep_b_percent_adherence)
 
 # take YES match vax1 / YES should vax1
   

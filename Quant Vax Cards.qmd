@@ -13,20 +13,22 @@ library(broom)
 
 ```{r}
 library(readr)
-QUANT_vax_cards <- read_csv("QUANT_vax_cards.csv", 
-    col_types = cols(date = col_date(format = "%d-%m-%y")))
+Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella.csv", 
+    col_types = cols(date = col_date(format = "%d-%m-%y"), 
+        dob = col_date(format = "%d-%m-%Y")))
+View(Consolidated_QUANT_Vax_Cards)
 ```
 
 ```{r}
 #| label: gender
 
 # frequency table
-QUANT_vax_cards |>
+Consolidated_QUANT_Vax_Cards |>
   count(gender) |>
   mutate(prop = n/sum(n))
 
 # bar chart
-QUANT_vax_cards |> ggplot(
+Consolidated_QUANT_Vax_Cards |> ggplot(
   aes(x = gender, fill = gender)
 ) +
   geom_bar() +
@@ -43,30 +45,13 @@ pie(slices, labels = labels, col = rainbow(length(labels)), main = "Pie Chart of
 ```
 
 ```{r}
-#| label: date format
-
-QUANT_vax_cards <- QUANT_vax_cards |>
-  mutate(dob_date_format = as.Date(dob, "%d-%m-%Y")) |>
-  mutate(day = day(dob_date_format),
-         month = month(dob_date_format),
-         year = year(dob_date_format))
-QUANT_vax_cards
-```
-
-```{r}
 #| label: desired-vax-score
 
-vax_score_tibble <- QUANT_vax_cards |>
-  mutate(date_of_survey = as.Date(date)) |>
-  select(group, date_of_survey, gender, dob, dob_date_format) 
-  
-  #mutate(dob_day = day(dob_date_format),
-  #       dob_month = month(dob_date_format),
-  #       dob_year = year(dob_date_format))
-
+vax_score_tibble <- Consolidated_QUANT_Vax_Cards |>
+  select(group, date, gender, dob) 
 
 vax_score_tibble <- vax_score_tibble |>
-  mutate(age_in_days = date_of_survey - dob_date_format) |>
+  mutate(age_in_days = date - dob) |>
   mutate(age_in_years = as.numeric(age_in_days) / 365.25) |>
   mutate(age_rounded = round(age_in_years, 1))
 
@@ -83,23 +68,15 @@ vax_score_tibble <- vax_score_tibble |>
                                      if_else(age_rounded >= 11 & gender == "F", 21, 0))))))))))
 
 vax_score_tibble <- vax_score_tibble |>
-  select(group, dob_date_format, age_rounded, desired_vax_score) 
+  select(group, dob, age_rounded, desired_vax_score) 
 vax_score_tibble
 
 ```
 
 ```{r}
-library(readr)
-Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella.csv", 
-    col_types = cols(date = col_date(format = "%d-%m-%y"), 
-        dob = col_date(format = "%d-%m-%Y")))
-View(Consolidated_QUANT_Vax_Cards)
-```
-
-```{r}
 #| label: actual-vax-score
 
-vaccine_schedule <- Consolidated_QUANT_Vax_Cards
+vaccine_schedule <- Consolidated_QUANT_Vax_Cards 
 
 vaccine_final <- tibble(
   survey_date = vaccine_schedule$date,
@@ -148,6 +125,7 @@ actual_vax_score <- vaccine_final |>
 
 joined_vax_cards <- actual_vax_score |>
   left_join(vax_score_tibble, by = join_by(group))
+
 ```
 
 ```{r}
@@ -165,7 +143,31 @@ joined_vax_cards |>
 #| label: percent-adherence-per-vax
 
 new_tibble <- vax_score_tibble |>
-  left_join(vaccine_final, by = join_by(group))
+  left_join(vaccine_final, by = join_by(group)) |>
+  select(!c(group, dob.x, dob.y, survey_date, child_gender)) |>
+  mutate(hep_b_should = if_else(age_rounded > 0, "YES", "NO")) |>
+  mutate(hep_b_match = if_else(hep_b_status == hep_b_should, "YES", "NO")) 
+
+match_tibble <- new_tibble |>
+  count(hep_b_match)
+
+num_yes_match <- match_tibble |>
+  filter(hep_b_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(hep_b_should)
+
+num_yes_should <- should_tibble |>
+  filter(hep_b_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+percent_adherence = num_yes_match / num_yes_should
+print(percent_adherence)
+
+# take YES match vax1 / YES should vax1
   
 ```
 

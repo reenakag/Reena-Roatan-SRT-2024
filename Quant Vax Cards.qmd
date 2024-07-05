@@ -148,48 +148,48 @@ new_tibble <- vax_score_tibble |>
 
 new_tibble <- new_tibble |>
   mutate(hep_b_should = if_else(age_rounded > 0, "YES", "NO")) |>
-  mutate(hep_b_match = if_else(hep_b_status == hep_b_should, "YES", "NO")) |>
+  mutate(hep_b_match = if_else(hep_b_status == hep_b_should & hep_b_status == "YES", "YES", "NO")) |>
   mutate(bcg_should = if_else(age_rounded > 0, "YES", "NO")) |>
-  mutate(bcg_match = if_else(bcg_status == bcg_should, "YES", "NO")) |>
+  mutate(bcg_match = if_else(bcg_status == bcg_should & bcg_status == "YES", "YES", "NO")) |>
   mutate(polio_vpi1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
-  mutate(polio_vpi1_match = if_else(polio_vpi1_status == polio_vpi1_should, "YES", "NO")) |>
+  mutate(polio_vpi1_match = if_else(polio_vpi1_status == polio_vpi1_should & polio_vpi1_status == "YES", "YES", "NO")) |>
   mutate(polio_vpi2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
-  mutate(polio_vpi2_match = if_else(polio_vpi2_status == polio_vpi2_should, "YES", "NO")) |>
+  mutate(polio_vpi2_match = if_else(polio_vpi2_status == polio_vpi2_should & polio_vpi2_status == "YES", "YES", "NO")) |>
   mutate(polio_vop1_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
-  mutate(polio_vop1_match = if_else(polio_vop1_status == polio_vop1_should, "YES", "NO")) |>
+  mutate(polio_vop1_match = if_else(polio_vop1_status == polio_vop1_should & polio_vop1_status == "YES", "YES", "NO")) |>
   mutate(polio_vop2_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
-  mutate(polio_vop2_match = if_else(polio_vop2_status == polio_vop2_should, "YES", "NO")) |>
+  mutate(polio_vop2_match = if_else(polio_vop2_status == polio_vop2_should & polio_vop2_status == "YES", "YES", "NO")) |>
   # skipping polio vop3 because not considering mandatory (it's extra, we are only including 4 polio shots as required)
   mutate(penta1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
-  mutate(penta1_match = if_else(penta1_status == penta1_should, "YES", "NO")) |>
+  mutate(penta1_match = if_else(penta1_status == penta1_should & penta1_status == "YES", "YES", "NO")) |>
   mutate(penta2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
-  mutate(penta2_match = if_else(penta2_status == penta2_should, "YES", "NO")) |>
+  mutate(penta2_match = if_else(penta2_status == penta2_should & penta2_status == "YES", "YES", "NO")) |>
   mutate(penta3_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
-  mutate(penta3_match = if_else(penta3_status == penta3_should, "YES", "NO")) |>
+  mutate(penta3_match = if_else(penta3_status == penta3_should & penta3_status == "YES", "YES", "NO")) |>
   mutate(neumo1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
-  mutate(neumo1_match = if_else(neumo1_status == neumo1_should, "YES", "NO")) |>
+  mutate(neumo1_match = if_else(neumo1_status == neumo1_should & neumo1_status == "YES", "YES", "NO")) |>
   mutate(neumo2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
-  mutate(neumo2_match = if_else(neumo2_status == neumo2_should, "YES", "NO")) |>
+  mutate(neumo2_match = if_else(neumo2_status == neumo2_should & neumo2_status == "YES", "YES", "NO")) |>
   mutate(neumo3_should = if_else(age_rounded >= 0.5, "YES", "NO")) |>
-  mutate(neumo3_match = if_else(neumo3_status == neumo3_should, "YES", "NO")) |>
+  mutate(neumo3_match = if_else(neumo3_status == neumo3_should & neumo3_status == "YES", "YES", "NO")) |>
   mutate(rota1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
-  mutate(rota1_match = if_else(rota1_status == rota1_should, "YES", "NO")) |>
+  mutate(rota1_match = if_else(rota1_status == rota1_should & rota1_status == "YES", "YES", "NO")) |>
   mutate(rota2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
-  mutate(rota2_match = if_else(rota2_status == rota2_should, "YES", "NO")) |>
+  mutate(rota2_match = if_else(rota2_status == rota2_should & rota2_status == "YES", "YES", "NO")) |>
   mutate(srp1_should = if_else(age_rounded >= 1.0, "YES", "NO")) |>
-  mutate(srp1_match = if_else(srp1_status == srp1_should, "YES", "NO")) |>
+  mutate(srp1_match = if_else(srp1_status == srp1_should & srp1_status == "YES", "YES", "NO")) |>
   mutate(srp2_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
-  mutate(srp2_match = if_else(srp2_status == srp2_should, "YES", "NO")) |>
+  mutate(srp2_match = if_else(srp2_status == srp2_should & srp2_status == "YES", "YES", "NO")) |>
   mutate(hep_a_should = if_else(age_rounded >= 1.0, "YES", "NO")) |>
-  mutate(hep_a_match = if_else(hep_a_status == hep_a_should, "YES", "NO")) |>
+  mutate(hep_a_match = if_else(hep_a_status == hep_a_should & hep_a_status == "YES", "YES", "NO")) |>
   mutate(dpt1_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
-  mutate(dpt1_match = if_else(dpt1_status == dpt1_should, "YES", "NO")) |>
+  mutate(dpt1_match = if_else(dpt1_status == dpt1_should & dpt1_status == "YES", "YES", "NO")) |>
   mutate(dpt2_should = if_else(age_rounded >= 4, "YES", "NO")) |>
-  mutate(dpt2_match = if_else(dpt2_status == dpt2_should, "YES", "NO")) |>
+  mutate(dpt2_match = if_else(dpt2_status == dpt2_should & dpt2_status == "YES", "YES", "NO")) |>
   mutate(vph_1_should = if_else(age_rounded >= 11  & child_gender == "F", "YES", "NO")) |>
-  mutate(vph_1_match = if_else(vph_1_status == vph_1_should, "YES", "NO")) |>
+  mutate(vph_1_match = if_else(vph_1_status == vph_1_should & vph_1_status == "YES", "YES", "NO")) |>
   mutate(tetanus_dip_should = if_else(age_rounded >= 11, "YES", "NO")) |>
-  mutate(tetanus_dip_match = if_else(tetanus_dip_status == tetanus_dip_should, "YES", "NO"))
+  mutate(tetanus_dip_match = if_else(tetanus_dip_status == tetanus_dip_should & tetanus_dip_status == "YES", "YES", "NO"))
 
 ```
 
@@ -216,7 +216,445 @@ print(num_yes_should)
 hep_b_percent_adherence = num_yes_match / num_yes_should
 print(hep_b_percent_adherence)
 
-# Example for loop
+######  BCG  #########
+
+match_tibble <- new_tibble |>
+  count(bcg_match)
+
+num_yes_match <- match_tibble |>
+  filter(bcg_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(bcg_should)
+
+num_yes_should <- should_tibble |>
+  filter(bcg_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+bcg_percent_adherence = num_yes_match / num_yes_should
+print(bcg_percent_adherence)
+
+###### Polio VPI 1 #########
+
+match_tibble <- new_tibble |>
+  count(polio_vpi1_match)
+
+num_yes_match <- match_tibble |>
+  filter(polio_vpi1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(polio_vpi1_should)
+
+num_yes_should <- should_tibble |>
+  filter(polio_vpi1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+polio_vpi1_percent_adherence = num_yes_match / num_yes_should
+print(polio_vpi1_percent_adherence)
+
+###### Polio VPI 2 #########
+
+match_tibble <- new_tibble |>
+  count(polio_vpi2_match)
+
+num_yes_match <- match_tibble |>
+  filter(polio_vpi2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(polio_vpi2_should)
+
+num_yes_should <- should_tibble |>
+  filter(polio_vpi2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+polio_vpi2_percent_adherence = num_yes_match / num_yes_should
+print(polio_vpi2_percent_adherence)
+
+###### Polio VOP 1 #########
+
+match_tibble <- new_tibble |>
+  count(polio_vop1_match)
+
+num_yes_match <- match_tibble |>
+  filter(polio_vop1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(polio_vop1_should)
+
+num_yes_should <- should_tibble |>
+  filter(polio_vop1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+polio_vop1_percent_adherence = num_yes_match / num_yes_should
+print(polio_vop1_percent_adherence)
+
+###### Polio VOP 2 #########
+
+match_tibble <- new_tibble |>
+  count(polio_vop2_match)
+
+num_yes_match <- match_tibble |>
+  filter(polio_vop2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(polio_vop2_should)
+
+num_yes_should <- should_tibble |>
+  filter(polio_vop2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+polio_vop2_percent_adherence = num_yes_match / num_yes_should
+print(polio_vop2_percent_adherence)
+###### Penta 1 #########
+
+match_tibble <- new_tibble |>
+  count(penta1_match)
+
+num_yes_match <- match_tibble |>
+  filter(penta1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(penta1_should)
+
+num_yes_should <- should_tibble |>
+  filter(penta1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+penta1_percent_adherence = num_yes_match / num_yes_should
+print(penta1_percent_adherence)
+
+###### Penta 2 #########
+
+match_tibble <- new_tibble |>
+  count(penta2_match)
+
+num_yes_match <- match_tibble |>
+  filter(penta2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(penta2_should)
+
+num_yes_should <- should_tibble |>
+  filter(penta2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+penta2_percent_adherence = num_yes_match / num_yes_should
+print(penta2_percent_adherence)
+
+###### Penta 3 #########
+
+match_tibble <- new_tibble |>
+  count(penta3_match)
+
+num_yes_match <- match_tibble |>
+  filter(penta3_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(penta3_should)
+
+num_yes_should <- should_tibble |>
+  filter(penta3_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+penta3_percent_adherence = num_yes_match / num_yes_should
+print(penta3_percent_adherence) ##we should double check this one because why is it at 100%-
+
+###### Neumo 1 #########
+
+match_tibble <- new_tibble |>
+  count(neumo1_match)
+
+num_yes_match <- match_tibble |>
+  filter(neumo1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(neumo1_should)
+
+num_yes_should <- should_tibble |>
+  filter(neumo1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+neumo1_percent_adherence = num_yes_match / num_yes_should
+print(neumo1_percent_adherence)
+
+###### Neumo 2 #########
+
+match_tibble <- new_tibble |>
+  count(neumo2_match)
+
+num_yes_match <- match_tibble |>
+  filter(neumo2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(neumo2_should)
+
+num_yes_should <- should_tibble |>
+  filter(neumo2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+neumo2_percent_adherence = num_yes_match / num_yes_should
+print(neumo2_percent_adherence)
+
+###### Neumo 3 #########
+
+match_tibble <- new_tibble |>
+  count(neumo3_match)
+
+num_yes_match <- match_tibble |>
+  filter(neumo3_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(neumo3_should)
+
+num_yes_should <- should_tibble |>
+  filter(neumo3_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+neumo3_percent_adherence = num_yes_match / num_yes_should
+print(neumo3_percent_adherence)
+
+###### Rota 1 #########
+
+match_tibble <- new_tibble |>
+  count(rota1_match)
+
+num_yes_match <- match_tibble |>
+  filter(rota1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(rota1_should)
+
+num_yes_should <- should_tibble |>
+  filter(rota1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+rota1_percent_adherence = num_yes_match / num_yes_should
+print(rota1_percent_adherence)
+
+###### Rota 2 #########
+
+match_tibble <- new_tibble |>
+  count(rota2_match)
+
+num_yes_match <- match_tibble |>
+  filter(rota2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(rota2_should)
+
+num_yes_should <- should_tibble |>
+  filter(rota2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+rota2_percent_adherence = num_yes_match / num_yes_should
+print(rota2_percent_adherence)
+
+###### SRP 1 #########
+
+match_tibble <- new_tibble |>
+  count(srp1_match)
+
+num_yes_match <- match_tibble |>
+  filter(srp1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(srp1_should)
+
+num_yes_should <- should_tibble |>
+  filter(srp1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+srp1_percent_adherence = num_yes_match / num_yes_should
+print(srp1_percent_adherence)
+
+###### SRP 2 #########
+
+match_tibble <- new_tibble |>
+  count(srp2_match)
+
+num_yes_match <- match_tibble |>
+  filter(srp2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(srp2_should)
+
+num_yes_should <- should_tibble |>
+  filter(srp2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+srp2_percent_adherence = num_yes_match / num_yes_should
+print(srp2_percent_adherence)
+
+###### Hep A #########
+
+match_tibble <- new_tibble |>
+  count(hep_a_match)
+
+num_yes_match <- match_tibble |>
+  filter(hep_a_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(hep_a_should)
+
+num_yes_should <- should_tibble |>
+  filter(hep_a_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+hep_a_percent_adherence = num_yes_match / num_yes_should
+print(hep_a_percent_adherence)
+
+###### DPT 1 #########
+
+match_tibble <- new_tibble |>
+  count(dpt1_match)
+
+num_yes_match <- match_tibble |>
+  filter(dpt1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(dpt1_should)
+
+num_yes_should <- should_tibble |>
+  filter(dpt1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+dpt1_percent_adherence = num_yes_match / num_yes_should
+print(dpt1_percent_adherence)
+
+###### DPT 2 #########
+
+match_tibble <- new_tibble |>
+  count(dpt2_match)
+
+num_yes_match <- match_tibble |>
+  filter(dpt2_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(dpt2_should)
+
+num_yes_should <- should_tibble |>
+  filter(dpt2_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+dpt2_percent_adherence = num_yes_match / num_yes_should
+print(dpt2_percent_adherence)
+
+###### VPH 1 #########
+
+match_tibble <- new_tibble |>
+  count(vph_1_match)
+
+num_yes_match <- match_tibble |>
+  filter(vph_1_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(vph_1_should)
+
+num_yes_should <- should_tibble |>
+  filter(vph_1_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+vph_1_percent_adherence = num_yes_match / num_yes_should
+print(vph_1_percent_adherence)
+
+###### Tetanus Diptheria #########
+
+match_tibble <- new_tibble |>
+  count(tetanus_dip_match)
+
+num_yes_match <- match_tibble |>
+  filter(tetanus_dip_match == "YES") |>
+  pull(n)
+print(num_yes_match)
+
+should_tibble <- new_tibble |>
+  count(tetanus_dip_should)
+
+num_yes_should <- should_tibble |>
+  filter(tetanus_dip_should == "YES") |>
+  pull(n)
+print(num_yes_should)
+
+tetanus_dip_percent_adherence = num_yes_match / num_yes_should
+print(tetanus_dip_percent_adherence)
+
+# take YES match vax1 / YES should vax1
+```
+
+
+
+```{r eval = FALSE}
+#| label: for-loop-attempts
+
+#########
+
+should_and_match_cols_only <- new_tibble |>
+  select(hep_b_should:tetanus_dip_match) 
+
+for(i in should_and_match_cols_only)
+{
+  should_and_match_cols_only |>
+    select(all_of(i)) 
+}
+
+#########
 
   for (i in seq(from = 27, to = 68, by = 2)) 
   {
@@ -238,50 +676,50 @@ print(hep_b_percent_adherence)
     print(percent_adherence)
   }
 
+########
 
-# take YES match vax1 / YES should vax1
-```
-
-```{r}
-# for loop
-
-#for (i in seq(from = 27, to = 29, by = 2)) 
- # {
- #   should_col <- new_tibble[i]
- #   match_col <- new_tibble[i+1]
-  
- #   should_col |>
-  #    count() 
-    
-#    match_col |>
-#      count()
- # }
-
-should_col <- new_tibble[27]
-match_col <- new_tibble[28]
+for (i in seq(from = 27, to = 29, by = 2)) 
+  {
+    should_col <- new_tibble[i]
+    match_col <- new_tibble[i+1]
   
     should_col |>
-      summarize() 
+      count() 
     
     match_col |>
-      summarize()
+      count()
+}
 
-#should_tibble <- new_tibble |>
-   #   count(should_col)
+########
+
+should_col <- new_tibble[1][27]
+match_col <- new_tibble[1][28]
+  
+    should_col 
     
-   # num_yes_should <- should_tibble |>
-   #   filter(should_col == "YES") |>
-   #   pull(n)
+    match_col 
     
-  #  match_tibble <- new_tibble |>
-  #    count(match_col)
+########
 
-  #  num_yes_match <- match_tibble |>
-  #    filter(match_col == "YES") |>
-  #    pull(n)
+should_tibble <- new_tibble |>
+      count(should_col)
+    
+    num_yes_should <- should_tibble |>
+      filter(should_col == "YES") |>
+      pull(n)
+    
+    match_tibble <- new_tibble |>
+      count(match_col)
 
-  #  percent_adherence = num_yes_match / num_yes_should
-  #  print(percent_adherence)
+    num_yes_match <- match_tibble |>
+      filter(match_col == "YES") |>
+      pull(n)
+
+    percent_adherence = num_yes_match / num_yes_should
+    print(percent_adherence)
+
+
 
 ```
+
 

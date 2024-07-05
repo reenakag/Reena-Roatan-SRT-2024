@@ -90,7 +90,7 @@ vax_score_tibble
 
 ```{r}
 library(readr)
-Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards.csv", 
+Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella.csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y"), 
         dob = col_date(format = "%d-%m-%Y")))
 View(Consolidated_QUANT_Vax_Cards)
@@ -160,3 +160,13 @@ joined_vax_cards
 joined_vax_cards |>
   count(complete)
 ```
+
+```{r}
+#| label: percent-adherence-per-vax
+
+new_tibble <- vax_score_tibble |>
+  left_join(vaccine_final, by = join_by(group))
+  
+```
+
+

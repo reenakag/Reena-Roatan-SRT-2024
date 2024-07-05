@@ -140,7 +140,7 @@ joined_vax_cards |>
 ```
 
 ```{r}
-#| label: percent-adherence-per-vax
+#| label: should-and-match-cols
 
 new_tibble <- vax_score_tibble |>
   left_join(vaccine_final, by = join_by(group)) |>
@@ -191,7 +191,10 @@ new_tibble <- new_tibble |>
   mutate(tetanus_dip_should = if_else(age_rounded >= 11, "YES", "NO")) |>
   mutate(tetanus_dip_match = if_else(tetanus_dip_status == tetanus_dip_should, "YES", "NO"))
 
-  
+```
+
+```{r}
+#| label: each-vax-adherence-calcs
 
 ###### Hep B ######
 match_tibble <- new_tibble |>
@@ -213,8 +216,72 @@ print(num_yes_should)
 hep_b_percent_adherence = num_yes_match / num_yes_should
 print(hep_b_percent_adherence)
 
+# Example for loop
+
+  for (i in seq(from = 27, to = 68, by = 2)) 
+  {
+    should_tibble <- new_tibble |>
+      count(new_tibble[i])
+    
+    num_yes_should <- should_tibble |>
+      filter(new_tibble[i] == "YES") |>
+      pull(n)
+    
+    match_tibble <- new_tibble |>
+      count(new_tibble[i+1])
+
+    num_yes_match <- match_tibble |>
+      filter(new_tibble[i+1] == "YES") |>
+      pull(n)
+
+    percent_adherence = num_yes_match / num_yes_should
+    print(percent_adherence)
+  }
+
+
 # take YES match vax1 / YES should vax1
-  
 ```
 
+```{r}
+# for loop
+
+#for (i in seq(from = 27, to = 29, by = 2)) 
+ # {
+ #   should_col <- new_tibble[i]
+ #   match_col <- new_tibble[i+1]
+  
+ #   should_col |>
+  #    count() 
+    
+#    match_col |>
+#      count()
+ # }
+
+should_col <- new_tibble[27]
+match_col <- new_tibble[28]
+  
+    should_col |>
+      summarize() 
+    
+    match_col |>
+      summarize()
+
+#should_tibble <- new_tibble |>
+   #   count(should_col)
+    
+   # num_yes_should <- should_tibble |>
+   #   filter(should_col == "YES") |>
+   #   pull(n)
+    
+  #  match_tibble <- new_tibble |>
+  #    count(match_col)
+
+  #  num_yes_match <- match_tibble |>
+  #    filter(match_col == "YES") |>
+  #    pull(n)
+
+  #  percent_adherence = num_yes_match / num_yes_should
+  #  print(percent_adherence)
+
+```
 

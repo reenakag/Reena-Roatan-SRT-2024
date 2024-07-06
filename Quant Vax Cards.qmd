@@ -1615,4 +1615,20 @@ should_tibble <- new_tibble |>
 
 ```
 
+```{r}
+#| label: vax-score-calc
+
+joined_vax_cards <- joined_vax_cards |>
+  mutate(vax_score = yes_count / desired_vax_score)
+
+joined_vax_cards |> ggplot(
+  aes(x = age_rounded, y = vax_score, color = colonia_status.x)
+) +
+  geom_point()
+
+joined_vax_cards |>
+  group_by(colonia_status.x) |>
+  summarise(mean(vax_score))
+  
+```
 

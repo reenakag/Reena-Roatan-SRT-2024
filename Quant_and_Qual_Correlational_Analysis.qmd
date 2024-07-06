@@ -1,0 +1,63 @@
+---
+title: "Quant-Qual-Correlational-Analysis"
+format: html
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+
+```{r}
+
+library(readr)
+QUAL_with_preg_score <- read_csv("arya copy of RStudio_GitHub Merged Data (QUAL) - Qual (1).csv")
+QUAL_with_preg_score
+
+```
+
+
+```{r}
+#| label: separate-group_no
+
+QUAL_with_preg_score <- QUAL_with_preg_score |>
+  mutate(grupo = str_extract(group_no, "[A-Z]+")) |>
+  mutate(survey_number_non_decimal = as.integer(gsub("[^0-9]", "", group_no)))
+
+joined_vax_cards <- joined_vax_cards |>
+  mutate(grupo = str_extract(group, "[A-Z]+")) |>
+  mutate(survey_number_decimal = as.numeric(str_extract(group, "[0-9.]+"))) |>
+  mutate(survey_number_non_decimal = trunc(survey_number_decimal))
+
+
+```
+
+```{r}
+#| label: join-vax-score-with-preg-score
+
+vax_score_joins_preg_score <- left_join(joined_vax_cards, QUAL_with_preg_score, by = c("grupo", "survey_number_non_decimal"))
+
+vax_score_joins_preg_score |>
+  select(group, age_rounded, vax_score, grupo, survey_number_decimal, survey_number_non_decimal, group_no, colonia, preg_score)
+```
+
+```{r}
+
+removed_preg_score_NA <- vax_score_joins_preg_score |>
+  filter(!is.na(preg_score)) 
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = preg_score, y = vax_score)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal()
+
+correlation <- cor(removed_preg_score_NA$preg_score, removed_preg_score_NA$vax_score)
+print(correlation)
+```
+
+

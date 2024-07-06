@@ -12,11 +12,13 @@ library(broom)
 ```
 
 ```{r}
+
 library(readr)
-Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella (1).csv", 
+Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella (2).csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y"), 
         dob = col_date(format = "%d-%m-%Y")))
-#View(Consolidated_QUANT_Vax_Cards_no_refuerzos_flu_vitA_varicella_A_B_Vax_Cards_MINUS_Refuerzos_HepBs_Varicella_1_)
+#View(Consolidated_QUANT_Vax_Cards_no_refuerzos_flu_vitA_varicella_A_B_Vax_Cards_MINUS_Refuerzos_HepBs_Varicella_2_)
+
 ```
 
 ```{r}
@@ -321,6 +323,7 @@ print(num_yes_should)
 
 polio_vop2_percent_adherence = num_yes_match / num_yes_should
 print(polio_vop2_percent_adherence)
+
 ###### Penta 1 #########
 
 match_tibble <- new_tibble |>
@@ -1085,7 +1088,6 @@ tetanus_dip_percent_adherence = num_yes_match / num_yes_should
 print(tetanus_dip_percent_adherence)
 ```
 
-
 ```{r}
 #| label: each-vax-adherence-calcs-for-NOT-colonia
 
@@ -1629,6 +1631,8 @@ joined_vax_cards |> ggplot(
 joined_vax_cards |>
   group_by(colonia_status.x) |>
   summarise(mean(vax_score))
+
+joined_vax_cards |>
+  filter(vax_score > 1.5)
   
 ```
-

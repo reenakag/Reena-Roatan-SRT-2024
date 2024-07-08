@@ -8,7 +8,6 @@ library(ggplot2)
 library(dplyr)
 ```
 
-
 ```{r}
 
 library(readr)
@@ -16,7 +15,6 @@ QUAL_with_preg_score <- read_csv("arya copy of RStudio_GitHub Merged Data (QUAL)
 QUAL_with_preg_score
 
 ```
-
 
 ```{r}
 #| label: separate-group_no
@@ -43,6 +41,7 @@ vax_score_joins_preg_score |>
 ```
 
 ```{r}
+#| label: vax-score-vs-preg-score
 
 removed_preg_score_NA <- vax_score_joins_preg_score |>
   filter(!is.na(preg_score)) 
@@ -54,10 +53,125 @@ removed_preg_score_NA |>
   geom_point() +
   scale_y_continuous(limits = c(0, 1.25)) +
   geom_smooth(method = "lm", se = FALSE) +
-  theme_minimal()
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
+       subtitle = "(for children with vaccine cards)",
+       x = "Question Response Score",
+       y = "Vaccination Score")
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge.png")
 
 correlation <- cor(removed_preg_score_NA$preg_score, removed_preg_score_NA$vax_score)
 print(correlation)
 ```
+
+```{r}
+#| label: vax-score-vs-preg-score-color-by-fam
+
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = preg_score, y = vax_score, color = group_no)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
+       subtitle = "(for children with vaccine cards)",
+       x = "Question Response Score",
+       y = "Vaccination Score",
+       caption = "(dots of the same color represent children of the same respondent)") +
+  theme(legend.position = "none") +
+  theme(plot.caption = element_text(size = 5))
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (by family).png")
+
+```
+
+
+```{r}
+#| label: vax-score-vs-preg-score-colonia-vs-not
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = preg_score, y = vax_score, color = colonia)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", aes(group = colonia), se = FALSE) +
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
+       subtitle = "(for children with vaccine cards)",
+       x = "Question Response Score",
+       y = "Vaccination Score",
+       color = "La Colonia") 
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (Colonia).png")
+```
+
+```{r}
+#| label: vax-score-vs-age
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = age_rounded, y = vax_score)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Child Age",
+       subtitle = "(for children with vaccine cards)",
+       x = "Child Age",
+       y = "Vaccination Score")
+ggsave("Child Vaccination Status vs. Child Age.png")
+
+
+```
+
+```{r}
+#| label: vax-score-vs-last-grade
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = last_grade, y = vax_score)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Respondent's Education Level",
+       subtitle = "(for children with vaccine cards)",
+       x = "Respondent's Last Grade of School Completed",
+       y = "Vaccination Score")
+ggsave("Child Vaccination Status vs. Respondent's Education Level.png")
+
+```
+
+```{r}
+#| label: vax-score-colonia-vs-not
+
+
+#removed_preg_score_NA |>
+ # group_by(colonia) |>
+ # mutate(mean_vax_score = mean(vax_score)) |>
+ # ggplot(
+ #   aes(x = colonia, y = mean_vax_score)
+ # ) +
+#  geom_col()
+
+#mean_values <- aggregate(vax_score ~ colonia, data = removed_preg_score_NA, FUN = mean)
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(x = colonia, y = vax_score, color = colonia)
+  ) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Distribution of Child Vaccination Scores in La Colonia vs. Not",
+       subtitle = "(for children with vaccine cards)",
+       x = "La Colonia",
+       y = "Child Vaccination Score") 
+ggsave("Distribution of Child Vaccination Scores in La Colonia vs. Not.png")
+```
+
 
 

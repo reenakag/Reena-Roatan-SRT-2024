@@ -14,10 +14,10 @@ library(broom)
 ```{r}
 
 library(readr)
-Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards (no refuerzos, flu, vitA, varicella) - A+B Vax Cards MINUS Refuerzos, HepBs, Varicella (2).csv", 
+Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards POLIO SHIFTED - FINAL (shifted polios, deleted cols, etc) (2).csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y"), 
         dob = col_date(format = "%d-%m-%Y")))
-#View(Consolidated_QUANT_Vax_Cards_no_refuerzos_flu_vitA_varicella_A_B_Vax_Cards_MINUS_Refuerzos_HepBs_Varicella_2_)
+#View(Consolidated_QUANT_Vax_Cards_POLIO_SHIFTED_FINAL_shifted_polios_deleted_cols_etc_2_)
 
 ```
 
@@ -80,7 +80,7 @@ vax_score_tibble
 
 vaccine_schedule <- Consolidated_QUANT_Vax_Cards 
 
-vaccine_final <- tibble(
+vaccine_final <- data.frame(
   colonia_status = vaccine_schedule$colonia_status,
   survey_date = vaccine_schedule$date,
   group = vaccine_schedule$group,
@@ -92,7 +92,6 @@ vaccine_final <- tibble(
   polio_vpi2_status = ifelse(!is.na(vaccine_schedule$polio_vpi2), "YES", "NO"),
   polio_vop1_status = ifelse(!is.na(vaccine_schedule$polio_vop1), "YES", "NO"),
   polio_vop2_status = ifelse(!is.na(vaccine_schedule$polio_vop2), "YES", "NO"),
-  polio_vop3_status = ifelse(!is.na(vaccine_schedule$polio_vop3), "YES", "NO"),
   penta1_status = ifelse(!is.na(vaccine_schedule$penta1), "YES", "NO"),
   penta2_status = ifelse(!is.na(vaccine_schedule$penta2), "YES", "NO"),
   penta3_status = ifelse(!is.na(vaccine_schedule$penta3), "YES", "NO"),
@@ -162,7 +161,6 @@ new_tibble <- new_tibble |>
   mutate(polio_vop1_match = if_else(polio_vop1_status == polio_vop1_should & polio_vop1_status == "YES", "YES", "NO")) |>
   mutate(polio_vop2_should = if_else(age_rounded >= 1.5, "YES", "NO")) |>
   mutate(polio_vop2_match = if_else(polio_vop2_status == polio_vop2_should & polio_vop2_status == "YES", "YES", "NO")) |>
-  # skipping polio vop3 because not considering mandatory (it's extra, we are only including 4 polio shots as required)
   mutate(penta1_should = if_else(age_rounded >= 0.2, "YES", "NO")) |>
   mutate(penta1_match = if_else(penta1_status == penta1_should & penta1_status == "YES", "YES", "NO")) |>
   mutate(penta2_should = if_else(age_rounded >= 0.3, "YES", "NO")) |>
@@ -1633,6 +1631,6 @@ joined_vax_cards |>
   summarise(mean(vax_score))
 
 joined_vax_cards |>
-  filter(vax_score > 1.5)
+  filter(vax_score > 1)
   
 ```

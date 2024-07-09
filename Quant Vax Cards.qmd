@@ -22,6 +22,12 @@ Consolidated_QUANT_Vax_Cards <- read_csv("Consolidated QUANT Vax Cards POLIO SHI
 ```
 
 ```{r}
+Consolidated_QUANT_Vax_Cards |>
+  count(colonia_status)
+```
+
+
+```{r}
 #| label: gender
 
 # frequency table

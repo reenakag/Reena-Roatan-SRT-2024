@@ -61,17 +61,31 @@ removed_preg_score_NA |>
        x = "Respondent Question Response Score",
        y = "Child Vaccination Score",
        caption = "n = 265")
-#ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge.png")
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge.png")
 
-vax_status_vs_preg_score_model <- linear_reg() |>
-  set_engine("lm") |>
-  fit(vax_score ~ preg_score, data = removed_preg_score_NA) |>
-  tidy()
-
-
-#correlation <- cor(removed_preg_score_NA$preg_score, removed_preg_score_NA$vax_score)
-#print(correlation)
 ```
+
+```{r}
+#| label: vax-status-vs-preg-score-model
+
+model1 <- lm(vax_score ~ preg_score, data = removed_preg_score_NA)
+
+summary(model1)
+
+print("equation of line of best fit:  vax score = 0.7917 + 0.0228*response score")
+
+#calc r
+predicted_values <- predict(model1)  
+observed_values <- removed_preg_score_NA$vax_score  
+cor1 <- cor(predicted_values, observed_values)
+print(cor1)
+
+#calc rsquared
+rsq1 <- summary(model1)$adj.r.squared
+print(rsq1)
+
+```
+
 
 ```{r}
 #| label: vax-score-vs-preg-score-color-by-fam
@@ -109,16 +123,42 @@ removed_preg_score_NA |>
   theme_minimal() +
   labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
        subtitle = "(for children with vaccine cards)",
-       x = "Question Response Score",
-       y = "Vaccination Score",
-       color = "La Colonia") 
-#ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (Colonia).png")
+       x = "Respondent Question Response Score",
+       y = "Child Vaccination Score",
+       color = "La Colonia",
+       caption = "n = 265") 
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (Colonia).png")
 ```
+
+```{r}
+#| label: vax-score-vs-preg-score-colonia-model
+
+#additive model
+model2 <- lm(vax_score ~ preg_score + colonia, data = removed_preg_score_NA)
+
+summary(model2)
+
+print("equation of non-Colonia line of best fit:  vax score = 0.7720 + 0.0261*response score 
+      equation of Colonia line of best fit: vax score = 0.7986 + 0.0218*response score 
+      equation of LSRL of model: vax score = 0.7720 + 0.0235*response score + 0.0266*colonia")
+
+#calc r
+predicted_values <- predict(model2)  
+observed_values <- removed_preg_score_NA$vax_score  
+cor2 <- cor(predicted_values, observed_values)
+print(cor2)
+
+#calc rsquared
+rsq2 <- summary(model2)$adj.r.squared
+print(rsq2)
+
+```
+
 
 ```{r}
 #| label: vax-score-vs-age
 
-removed_preg_score_NA |>
+vax_score_joins_preg_score |>
   ggplot(
     aes(x = age_rounded, y = vax_score)
   ) +
@@ -129,11 +169,34 @@ removed_preg_score_NA |>
   labs(title = "Child Vaccination Status vs. Child Age",
        subtitle = "(for children with vaccine cards)",
        x = "Child Age",
-       y = "Vaccination Score")
-#ggsave("Child Vaccination Status vs. Child Age.png")
+       y = "Child Vaccination Score",
+       caption = "n = 270")
+ggsave("Child Vaccination Status vs. Child Age.png")
 
 
 ```
+
+```{r}
+#| label: vax-score-vs-age-model
+
+model3 <- lm(vax_score ~ age_rounded, data = removed_preg_score_NA)
+
+summary(model3)
+
+print("equation of line of best fit:  vax score = 0.9349 + -0.0051*child age")
+
+#calc r
+predicted_values <- predict(model3)  
+observed_values <- removed_preg_score_NA$vax_score  
+cor3 <- cor(predicted_values, observed_values)
+print(cor3)
+
+#calc rsquared
+rsq3 <- summary(model3)$adj.r.squared
+print(rsq3)
+
+```
+
 
 ```{r}
 #| label: vax-score-vs-last-grade
@@ -149,37 +212,65 @@ removed_preg_score_NA |>
   labs(title = "Child Vaccination Status vs. Respondent's Education Level",
        subtitle = "(for children with vaccine cards)",
        x = "Respondent's Last Grade of School Completed",
-       y = "Vaccination Score")
-#ggsave("Child Vaccination Status vs. Respondent's Education Level.png")
+       y = "Child Vaccination Score", 
+       caption = "n = 257")
+ggsave("Child Vaccination Status vs. Respondent's Education Level.png")
 
 ```
 
 ```{r}
+#| label: vax-score-vs-education-model
+
+removed_last_grade_NA <- removed_preg_score_NA |>
+  filter(!is.na(last_grade))
+
+model4 <- lm(vax_score ~ last_grade, data = removed_last_grade_NA)
+
+summary(model4)
+
+print("equation of line of best fit:  vax score = 0.9278 + -0.0016*last grade")
+
+#calc r
+predicted_values <- predict(model4)  
+observed_values <- removed_last_grade_NA$vax_score  
+cor4 <- cor(predicted_values, observed_values)
+print(cor4)
+
+#calc rsquared
+rsq4 <- summary(model4)$adj.r.squared
+print(rsq4)
+```
+
+
+```{r}
 #| label: vax-score-colonia-vs-not
-
-
-#removed_preg_score_NA |>
- # group_by(colonia) |>
- # mutate(mean_vax_score = mean(vax_score)) |>
- # ggplot(
- #   aes(x = colonia, y = mean_vax_score)
- # ) +
-#  geom_col()
-
-#mean_values <- aggregate(vax_score ~ colonia, data = removed_preg_score_NA, FUN = mean)
 
 removed_preg_score_NA |>
   ggplot(
     aes(x = colonia, y = vax_score, color = colonia)
   ) +
   geom_boxplot() +
+  scale_y_continuous(limits = c(0, 1.1)) +
   theme_minimal() +
   theme(legend.position = "none") +
-  labs(title = "Distribution of Child Vaccination Scores in La Colonia vs. Not",
+  labs(title = "Distribution of Child Vaccination Scores in La Colonia vs. Non-Colonia",
        subtitle = "(for children with vaccine cards)",
        x = "La Colonia",
-       y = "Child Vaccination Score") 
-#ggsave("Distribution of Child Vaccination Scores in La Colonia vs. Not.png")
+       y = "Child Vaccination Score",
+       caption = "n = 270") 
+ggsave("Distribution of Child Vaccination Scores in La Colonia vs. Non-Colonia.png")
+
+vax_score_joins_preg_score_colonia <- vax_score_joins_preg_score |>
+  filter(colonia == "Yes") 
+  
+mean_vax_score_colonia = mean(vax_score_joins_preg_score_colonia$vax_score)
+print(mean_vax_score_colonia)
+
+vax_score_joins_preg_score_non_colonia <- vax_score_joins_preg_score |>
+  filter(colonia == "No") 
+  
+mean_vax_score_non_colonia = mean(vax_score_joins_preg_score_non_colonia$vax_score)
+print(mean_vax_score_non_colonia)
 ```
 
 

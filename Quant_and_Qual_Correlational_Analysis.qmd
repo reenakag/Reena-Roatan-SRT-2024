@@ -6,6 +6,7 @@ format: html
 ```{r}
 library(ggplot2)
 library(dplyr)
+library(tidymodels)
 ```
 
 ```{r}
@@ -37,7 +38,8 @@ joined_vax_cards <- joined_vax_cards |>
 vax_score_joins_preg_score <- left_join(joined_vax_cards, QUAL_with_preg_score, by = c("grupo", "survey_number_non_decimal"))
 
 vax_score_joins_preg_score |>
-  select(group, age_rounded, vax_score, grupo, survey_number_decimal, survey_number_non_decimal, group_no, colonia, preg_score)
+  select(group, age_rounded, vax_score, grupo, survey_number_decimal, survey_number_non_decimal, group_no, colonia, preg_score) |>
+  write.csv(file = "vax_and_preg_score.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -56,12 +58,19 @@ removed_preg_score_NA |>
   theme_minimal() +
   labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
        subtitle = "(for children with vaccine cards)",
-       x = "Question Response Score",
-       y = "Vaccination Score")
-ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge.png")
+       x = "Respondent Question Response Score",
+       y = "Child Vaccination Score",
+       caption = "n = 265")
+#ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge.png")
 
-correlation <- cor(removed_preg_score_NA$preg_score, removed_preg_score_NA$vax_score)
-print(correlation)
+vax_status_vs_preg_score_model <- linear_reg() |>
+  set_engine("lm") |>
+  fit(vax_score ~ preg_score, data = removed_preg_score_NA) |>
+  tidy()
+
+
+#correlation <- cor(removed_preg_score_NA$preg_score, removed_preg_score_NA$vax_score)
+#print(correlation)
 ```
 
 ```{r}
@@ -82,7 +91,7 @@ removed_preg_score_NA |>
        caption = "(dots of the same color represent children of the same respondent)") +
   theme(legend.position = "none") +
   theme(plot.caption = element_text(size = 5))
-ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (by family).png")
+#ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (by family).png")
 
 ```
 
@@ -103,7 +112,7 @@ removed_preg_score_NA |>
        x = "Question Response Score",
        y = "Vaccination Score",
        color = "La Colonia") 
-ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (Colonia).png")
+#ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge (Colonia).png")
 ```
 
 ```{r}
@@ -121,7 +130,7 @@ removed_preg_score_NA |>
        subtitle = "(for children with vaccine cards)",
        x = "Child Age",
        y = "Vaccination Score")
-ggsave("Child Vaccination Status vs. Child Age.png")
+#ggsave("Child Vaccination Status vs. Child Age.png")
 
 
 ```
@@ -141,7 +150,7 @@ removed_preg_score_NA |>
        subtitle = "(for children with vaccine cards)",
        x = "Respondent's Last Grade of School Completed",
        y = "Vaccination Score")
-ggsave("Child Vaccination Status vs. Respondent's Education Level.png")
+#ggsave("Child Vaccination Status vs. Respondent's Education Level.png")
 
 ```
 
@@ -170,7 +179,7 @@ removed_preg_score_NA |>
        subtitle = "(for children with vaccine cards)",
        x = "La Colonia",
        y = "Child Vaccination Score") 
-ggsave("Distribution of Child Vaccination Scores in La Colonia vs. Not.png")
+#ggsave("Distribution of Child Vaccination Scores in La Colonia vs. Not.png")
 ```
 
 

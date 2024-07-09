@@ -272,12 +272,6 @@ vax_score_joins_preg_score_non_colonia <- vax_score_joins_preg_score |>
 mean_vax_score_non_colonia = mean(vax_score_joins_preg_score_non_colonia$vax_score)
 print(mean_vax_score_non_colonia)
 ```
-```{r}
-#- distribution of preg score for island region (boxplots)
-#- distribution of preg score for La Colonia vs. not
-#- Vaccination score vs. vaccination location (somehow)
-#- Vaccination score vs. perceived distance to CE (subset for only people that get vax at CE)
-```
 
 ```{r}
 library(readr)
@@ -385,6 +379,87 @@ region5 <- vax_score_joins_island_region_selected |>
   filter(island_region == "5") 
 mean5 = mean(region5$vax_score)
 print(mean5)
+
+```
+
+
+```{r}
+#| label: preg-score-dist-island-region
+
+all_surveys_no_preg_score_NA <- arya_copy_of_RStudio_GitHub_Merged_Data_QUAL_Qual_1_ |>
+  filter(!is.na(preg_score))
+
+preg_score_joins_island_region <- left_join(all_surveys_no_preg_score_NA, Qual_island_region, by = "group_no")
+
+preg_score_joins_island_region_selected <- preg_score_joins_island_region |>
+  select(group_no, island_region, preg_score) 
+
+preg_score_joins_island_region |>
+  ggplot(
+    aes(x = as.factor(island_region), y = preg_score, color = island_region)
+  ) +
+  geom_boxplot() +
+  scale_y_continuous(limits = c(0, 6)) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Vaccine Knowledge Question Response Scores in 5 Island Regions",
+       x = "Island Region",
+       y = "Question Response Score",
+       caption = "n = 429") 
+ggsave("Distribution of Vax Knowledge Question Scores in 5 Island Regions.png")
+
+r1 <- preg_score_joins_island_region |>
+  filter(island_region == "1") 
+m1 = mean(r1$preg_score)
+print(m1)
+
+r2 <- preg_score_joins_island_region |>
+  filter(island_region == "2") 
+m2 = mean(r2$preg_score)
+print(m2)
+
+r3 <- preg_score_joins_island_region |>
+  filter(island_region == "3") 
+m3 = mean(r3$preg_score)
+print(m3)
+
+r4 <- preg_score_joins_island_region |>
+  filter(island_region == "4") 
+m4 = mean(r4$preg_score)
+print(m4)
+
+r5 <- preg_score_joins_island_region |>
+  filter(island_region == "5") 
+m5 = mean(r5$preg_score)
+print(m5)
+```
+
+```{r}
+#| label: preg-score-dist-colonia
+
+preg_score_joins_island_region |>
+  ggplot(
+    aes(x = colonia.x, y = preg_score, color = colonia.x)
+  ) +
+  geom_boxplot() +
+  scale_y_continuous(limits = c(0, 6)) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Vaccine Knowledge Question Response Scores in La Colonia vs. Not",
+       x = "La Colonia",
+       y = "Question Response Score",
+       caption = "n = 429") 
+ggsave("Distribution of Vax Knowledge Question Scores in La Colonia vs Not.png")
+
+r1c <- preg_score_joins_island_region |>
+  filter(colonia.x == "Yes") 
+m1c = mean(r1c$preg_score)
+print(m1c)
+
+r2nc <- preg_score_joins_island_region |>
+  filter(colonia.x == "No") 
+m2nc = mean(r2nc$preg_score)
+print(m2nc)
 
 ```
 

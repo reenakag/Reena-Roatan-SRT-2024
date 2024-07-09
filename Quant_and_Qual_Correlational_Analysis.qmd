@@ -272,6 +272,119 @@ vax_score_joins_preg_score_non_colonia <- vax_score_joins_preg_score |>
 mean_vax_score_non_colonia = mean(vax_score_joins_preg_score_non_colonia$vax_score)
 print(mean_vax_score_non_colonia)
 ```
+```{r}
+#- distribution of preg score for island region (boxplots)
+#- distribution of preg score for La Colonia vs. not
+#- Vaccination score vs. vaccination location (somehow)
+#- Vaccination score vs. perceived distance to CE (subset for only people that get vax at CE)
+```
 
+```{r}
+library(readr)
+Qual_island_region <- read_csv("RStudio_GitHub Merged Data (QUAL) - Qual (3).csv", 
+    col_types = cols(date = col_date(format = "%d-%m-%y")))
+View(RStudio_GitHub_Merged_Data_QUAL_Qual_3_)
+```
 
+```{r}
+#| label: vax-score-joins-preg-score-joins-island-region
+
+joined_vax_cards <- joined_vax_cards |>
+  mutate(group_no = paste0(grupo, survey_number_non_decimal))
+
+vax_score_joins_island_region <- left_join(vax_score_joins_preg_score, Qual_island_region, by = "group_no")
+
+vax_score_joins_island_region_selected <- vax_score_joins_island_region |>
+  select(group, vax_score, group_no, island_region, preg_score) 
+
+```
+
+```{r}
+#| label: vax-score-vs-preg-score-by-island-region
+
+no_preg_NA <- vax_score_joins_island_region_selected |>
+  filter(!is.na(preg_score))
+
+no_preg_NA |>
+  ggplot(
+    aes(x = preg_score, y = vax_score, color = island_region)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", aes(group = island_region), se = FALSE) +
+  theme_minimal() +
+  labs(title = "Child Vaccination Status vs. Respondent Vaccine Knowledge",
+       subtitle = "(for children with vaccine cards)",
+       x = "Respondent Question Response Score",
+       y = "Child Vaccination Score",
+       color = "Island Region",
+       caption = "n = 265") 
+ggsave("Child Vaccination Status vs. Respondent Vaccine Knowledge by Island Region.png")
+
+```
+
+```{r}
+
+#additive model
+model5 <- lm(vax_score ~ preg_score + island_region, data = no_preg_NA)
+
+summary(model5)
+
+print("equation of LSRL of model: vax score = 0.7900 + 0.0223*response score + 0.0034*island region")
+
+#calc r
+predicted_values <- predict(model5)  
+observed_values <- no_preg_NA$vax_score  
+cor5 <- cor(predicted_values, observed_values)
+print(cor5)
+
+#calc rsquared
+rsq5 <- summary(model5)$adj.r.squared
+print(rsq5)
+```
+
+```{r}
+#| label: vax-score-dist-by-island-region
+
+vax_score_joins_island_region_selected |>
+  ggplot(
+    aes(x = as.factor(island_region), y = vax_score, color = island_region)
+  ) +
+  geom_boxplot() +
+  scale_y_continuous(limits = c(0, 1.1)) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Distribution of Child Vaccination Scores in the 5 Island Regions",
+       subtitle = "(for children with vaccine cards)",
+       x = "Island Region",
+       y = "Child Vaccination Score",
+       caption = "n = 270") 
+ggsave("Distribution of Child Vaccination Scores in 5 Island Regions.png")
+
+region1 <- vax_score_joins_island_region_selected |>
+  filter(island_region == "1") 
+mean1 = mean(region1$vax_score)
+print(mean1)
+
+region2 <- vax_score_joins_island_region_selected |>
+  filter(island_region == "2") 
+mean2 = mean(region2$vax_score)
+print(mean2)
+
+region3 <- vax_score_joins_island_region_selected |>
+  filter(island_region == "3") 
+mean3 = mean(region3$vax_score)
+print(mean3)
+
+region4 <- vax_score_joins_island_region_selected |>
+  filter(island_region == "4") 
+mean4 = mean(region4$vax_score)
+print(mean4)
+
+region5 <- vax_score_joins_island_region_selected |>
+  filter(island_region == "5") 
+mean5 = mean(region5$vax_score)
+print(mean5)
+
+```
 

@@ -26,7 +26,6 @@ Consolidated_QUANT_Vax_Cards |>
   count(colonia_status)
 ```
 
-
 ```{r}
 #| label: gender
 

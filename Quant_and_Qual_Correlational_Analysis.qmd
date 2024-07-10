@@ -171,7 +171,22 @@ vax_score_joins_preg_score |>
        x = "Child Age",
        y = "Child Vaccination Score",
        caption = "n = 270")
-ggsave("Child Vaccination Status vs. Child Age.png")
+#ggsave("Child Vaccination Status vs. Child Age.png")
+
+vax_score_joins_preg_score |>
+  ggplot(
+    aes(x = age_rounded, y = vax_score)
+  ) +
+  geom_point() +
+  scale_y_continuous(limits = c(0, 1.25)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(title = "Estado de Vacunación de Niño versus Edad de Niño",
+       subtitle = "(por niños con las carnets de vacuna)",
+       x = "Edad de Niño",
+       y = "Estado de Vacunación de Niño",
+       caption = "n = 270")
+ggsave("Estado de Vacunación de Niño versus Edad de Niño.png")
 
 
 ```

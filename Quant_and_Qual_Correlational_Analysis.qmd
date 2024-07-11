@@ -256,6 +256,29 @@ rsq4 <- summary(model4)$adj.r.squared
 print(rsq4)
 ```
 
+```{r}
+#| label: vax-score-dist
+
+removed_preg_score_NA |>
+  ggplot(
+    aes(y = vax_score)
+  ) +
+  geom_boxplot(width = 0.5) +
+  scale_y_continuous(limits = c(0, 1.1)) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Distribution of Child Vaccination Scores",
+       subtitle = "(for all children with vaccine cards)",
+       y = "Child Vaccination Score",
+       caption = "n = 270") +
+  theme(axis.text.x = element_blank())
+ggsave("Distribution of Child Vaccination Scores.png")
+  
+mean_vax_score = mean(vax_score_joins_preg_score$vax_score)
+print(mean_vax_score)
+
+```
+
 
 ```{r}
 #| label: vax-score-colonia-vs-not

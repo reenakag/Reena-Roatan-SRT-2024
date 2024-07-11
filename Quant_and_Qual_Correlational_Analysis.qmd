@@ -309,6 +309,15 @@ vax_score_joins_preg_score_non_colonia <- vax_score_joins_preg_score |>
   
 mean_vax_score_non_colonia = mean(vax_score_joins_preg_score_non_colonia$vax_score)
 print(mean_vax_score_non_colonia)
+
+# t-test
+set.seed(123)
+colonia_group <- rnorm(161, mean = mean_vax_score_colonia, sd = 2)
+non_colonia_group <- rnorm(109, mean = mean_vax_score_non_colonia, sd = 2)
+
+t_test <- t.test(colonia_group, non_colonia_group)
+
+print(t_test)
 ```
 
 ```{r}

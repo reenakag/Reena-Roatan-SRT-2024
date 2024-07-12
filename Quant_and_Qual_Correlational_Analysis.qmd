@@ -321,6 +321,22 @@ print(t_test)
 ```
 
 ```{r}
+#| label: t-test-question-response-score-colonia
+
+Qual_island_region |>
+  count(colonia)
+
+set.seed(123)
+colonia_group <- rnorm(187, mean = 5.3, sd = 2)
+non_colonia_group <- rnorm(249, mean = 5.25, sd = 2)
+
+t_test <- t.test(colonia_group, non_colonia_group)
+
+print(t_test)
+```
+
+
+```{r}
 library(readr)
 Qual_island_region <- read_csv("RStudio_GitHub Merged Data (QUAL) - Qual (3).csv", 
     col_types = cols(date = col_date(format = "%d-%m-%y")))
